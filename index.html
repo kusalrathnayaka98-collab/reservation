@@ -891,6 +891,95 @@ body {
 ::-webkit-scrollbar-thumb { background: var(--border-dark); border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: #aab; }
 
+/* ─── BILL SETTLEMENT STYLES ─── */
+.badge-paid    { background:#E8F5E9; color:#2E7D32; }
+.badge-paid::before    { background:#2E7D32; }
+.badge-pending { background:#FFF3E0; color:#E65100; }
+.badge-pending::before { background:#E65100; }
+.badge-partial { background:#E8EAF6; color:#3F51B5; }
+.badge-partial::before { background:#3F51B5; }
+.folio-header-box { background:var(--primary-pale); border:1px solid #BBDEFB; border-radius:10px; padding:14px 18px; margin-bottom:16px; display:flex; align-items:center; gap:16px; flex-wrap:wrap; }
+.folio-guest-name { font-size:18px; font-weight:700; margin-bottom:2px; }
+.folio-meta { font-size:11px; color:var(--text-2); display:flex; gap:14px; flex-wrap:wrap; margin-top:5px; }
+.folio-balance-box { text-align:right; flex-shrink:0; }
+.folio-balance-label { font-size:10px; color:var(--text-3); }
+.folio-balance-amount { font-family:'IBM Plex Mono',monospace; font-size:24px; font-weight:700; }
+.dept-tag { display:inline-block; padding:2px 7px; border-radius:4px; font-size:10px; font-weight:600; }
+.dept-Room      { background:#E3F2FD; color:#0D47A1; }
+.dept-FB        { background:#FFF3E0; color:#E65100; }
+.dept-Laundry   { background:#F3E5F5; color:#6A1B9A; }
+.dept-Spa       { background:#FCE4EC; color:#880E4F; }
+.dept-MiniBar   { background:#E8F5E9; color:#2E7D32; }
+.dept-Transport { background:#E0F7FA; color:#006064; }
+.dept-Payment   { background:#E8F5E9; color:#1B5E20; }
+.dept-Misc      { background:#ECEFF1; color:#546E7A; }
+.charge-credit  { color:#2E7D32; font-weight:700; }
+.running-pos    { color:#C62828; font-family:'IBM Plex Mono',monospace; font-size:12px; }
+.running-zero   { color:#2E7D32; font-family:'IBM Plex Mono',monospace; font-size:12px; }
+.folio-summary-row { display:flex; justify-content:space-between; padding:7px 0; font-size:13px; border-bottom:1px solid var(--border); }
+.folio-summary-row:last-child { border:none; font-size:14px; font-weight:700; }
+.guest-chip { display:inline-flex; align-items:center; gap:7px; padding:6px 13px; border-radius:7px; border:1px solid var(--border-dark); background:var(--white); cursor:pointer; font-size:12px; transition:all 0.15s; margin:0 6px 6px 0; }
+.guest-chip:hover { border-color:var(--primary); background:var(--primary-pale); }
+.guest-chip.active { border-color:var(--primary); background:var(--primary); color:#fff; }
+.pay-method-btn { flex:1; min-width:80px; padding:12px 8px; border:2px solid var(--border-dark); border-radius:10px; background:var(--white); cursor:pointer; text-align:center; transition:all 0.2s; font-family:'IBM Plex Sans',sans-serif; }
+.pay-method-btn:hover { border-color:var(--primary); background:var(--primary-pale); }
+.pay-method-btn.selected { border-color:var(--primary); background:var(--primary); color:#fff; }
+.pm-icon  { font-size:20px; display:block; margin-bottom:3px; }
+.pm-label { font-size:11px; font-weight:600; display:block; }
+.numpad   { display:grid; grid-template-columns:repeat(3,1fr); gap:7px; margin-top:8px; }
+.numpad-btn { padding:13px; border:1px solid var(--border-dark); border-radius:8px; background:var(--white); font-size:15px; font-weight:600; cursor:pointer; font-family:'IBM Plex Mono',monospace; transition:all 0.15s; }
+.numpad-btn:hover { background:var(--primary-pale); border-color:var(--primary); }
+.numpad-btn.clr { background:#FFF3E0; color:#E65100; }
+.numpad-btn.zero { grid-column:span 2; }
+.receipt-box { background:var(--white); border:2px solid var(--border); border-radius:10px; padding:18px; font-family:'IBM Plex Mono',monospace; font-size:12px; }
+.receipt-hotel { text-align:center; margin-bottom:12px; }
+.receipt-hotel h3 { font-family:'IBM Plex Sans',sans-serif; font-size:14px; font-weight:700; }
+.receipt-hotel p  { font-size:10px; color:var(--text-3); }
+.rcpt-dashes { border:none; border-top:2px dashed var(--border-dark); margin:10px 0; }
+.rcpt-row { display:flex; justify-content:space-between; margin-bottom:5px; }
+.rcpt-total { font-size:13px; font-weight:700; border-top:2px solid var(--text); padding-top:7px; margin-top:4px; }
+.rcpt-paid  { color:#2E7D32; }
+.rcpt-stamp { text-align:center; margin-top:12px; padding:8px; border:2px solid #2E7D32; border-radius:7px; color:#2E7D32; font-size:12px; font-weight:700; letter-spacing:2px; }
+.step-bar { display:flex; margin-bottom:16px; }
+.step-item { flex:1; padding:8px 10px; text-align:center; font-size:11px; font-weight:600; background:var(--bg); border:1px solid var(--border); border-right:none; color:var(--text-3); }
+.step-item:first-child { border-radius:7px 0 0 7px; }
+.step-item:last-child  { border-radius:0 7px 7px 0; border-right:1px solid var(--border); }
+.step-item.s-active { background:var(--primary); color:#fff; border-color:var(--primary); }
+.step-item.s-done   { background:#2E7D32; color:#fff; border-color:#2E7D32; }
+.cl-card { background:var(--white); border:1.5px solid var(--border); border-radius:10px; padding:14px; cursor:pointer; transition:all 0.2s; margin-bottom:10px; }
+.cl-card:hover { box-shadow:0 4px 14px rgba(0,0,0,0.1); border-color:var(--primary); }
+.cl-card.cl-selected { border-color:var(--primary); background:var(--primary-pale); }
+.cl-card.cl-over { border-color:#C62828; }
+.cl-bar { height:6px; background:#E0E0E0; border-radius:3px; overflow:hidden; margin-top:7px; }
+.cl-bar-fill { height:100%; border-radius:3px; }
+.cl-tx { display:flex; align-items:center; gap:10px; padding:10px 14px; border-bottom:1px solid var(--border); font-size:12px; }
+.cl-tx:last-child { border-bottom:none; }
+.cl-debit  { color:#C62828; font-family:'IBM Plex Mono',monospace; font-weight:700; }
+.cl-credit { color:#2E7D32; font-family:'IBM Plex Mono',monospace; font-weight:700; }
+/* ── PRINT MENU ── */
+.print-menu-item { display:flex; align-items:center; gap:9px; padding:9px 14px; font-size:12px; cursor:pointer; color:var(--text); border-bottom:1px solid var(--border); transition:background 0.12s; }
+.print-menu-item:last-child { border-bottom:none; }
+.print-menu-item:hover { background:var(--primary-pale); color:var(--primary); }
+.print-menu-label { font-size:10px; font-weight:700; letter-spacing:1px; color:var(--text-3); padding:7px 14px 4px; background:var(--bg); }
+.print-header { display:none; text-align:center; margin-bottom:18px; padding-bottom:12px; border-bottom:2px solid #333; }
+.print-header h2 { font-size:18px; font-weight:700; margin-bottom:3px; }
+.print-header p  { font-size:11px; color:#666; margin:1px 0; }
+.print-header .print-meta { display:flex; justify-content:space-between; margin-top:10px; font-size:11px; border-top:1px solid #ddd; padding-top:8px; }
+#print-folio-view { display:none; }
+@media print {
+  .sidebar,.topbar,.no-print,.modal-bg { display:none !important; }
+  .main { margin-left:0 !important; }
+  body { background:#fff !important; font-size:12px; }
+  .page { display:none !important; }
+  .page.print-active { display:block !important; }
+  .card { box-shadow:none !important; border:1px solid #ccc !important; }
+  .print-header { display:block !important; }
+  #print-folio-view { display:block !important; }
+  .pms-table { font-size:11px; }
+  .pms-table th, .pms-table td { padding:6px 8px !important; }
+  @page { margin:15mm 12mm; size:A4; }
+}
+
 /* ─── INPUT / SELECT ─── */
 input, select, textarea {
   font-family: 'IBM Plex Sans', sans-serif;
@@ -974,10 +1063,25 @@ textarea.form-control { min-height: 70px; resize: vertical; }
   <div class="sb-divider"></div>
 
   <div class="sb-section">
-    <div class="sb-section-label">Revenue & Channels</div>
+    <div class="sb-section-label">Bill Settlement</div>
     <div class="sb-item" id="nav-billing" onclick="showPage('billing')">
-      <span class="sb-icon">💳</span> Billing / Folio
+      <span class="sb-icon">💳</span> Billing Dashboard
     </div>
+    <div class="sb-item" id="nav-folio" onclick="showPage('folio')">
+      <span class="sb-icon">📄</span> Guest Folio
+    </div>
+    <div class="sb-item" id="nav-payment" onclick="showPage('payment')">
+      <span class="sb-icon">💰</span> Payment / Receipt
+    </div>
+    <div class="sb-item" id="nav-cityledger" onclick="showPage('cityledger')">
+      <span class="sb-icon">🏢</span> City Ledger
+    </div>
+  </div>
+
+  <div class="sb-divider"></div>
+
+  <div class="sb-section">
+    <div class="sb-section-label">Revenue & Channels</div>
     <div class="sb-item" id="nav-channels" onclick="showPage('channels')">
       <span class="sb-icon">🌐</span> Channel Manager
     </div>
@@ -1023,11 +1127,26 @@ textarea.form-control { min-height: 70px; resize: vertical; }
     <div class="topbar-right">
       <div class="topbar-date" id="topbar-date"></div>
       <div class="topbar-hotel">🏨 Luxe Grand Colombo</div>
+      <div style="position:relative;" id="print-btn-wrap" class="no-print">
+        <button class="btn btn-outline" id="print-btn" onclick="togglePrintMenu()" style="display:none;">🖨️ Print ▾</button>
+        <div id="print-menu" style="display:none;position:absolute;top:calc(100% + 4px);right:0;background:#fff;border:1px solid var(--border);border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,0.12);min-width:200px;z-index:999;overflow:hidden;"></div>
+      </div>
       <button class="btn btn-primary" onclick="openModal('modal-newres')">＋ New Reservation</button>
     </div>
   </div>
 
   <div class="content">
+
+    <!-- PRINT HEADER (shown only in print mode) -->
+    <div class="print-header" id="print-header-block">
+      <h2>🏨 Luxe Grand Hotel, Colombo</h2>
+      <p>123 Galle Road, Colombo 03, Sri Lanka &nbsp;·&nbsp; Tel: +94 11 234 5678 &nbsp;·&nbsp; VAT: 12345678</p>
+      <div class="print-meta">
+        <span id="print-report-title">Report</span>
+        <span id="print-report-date"></span>
+        <span>Printed by: Amal Mendis</span>
+      </div>
+    </div>
 
     <!-- ══════════════════════════════════ -->
     <!--  DASHBOARD                        -->
@@ -1377,28 +1496,251 @@ textarea.form-control { min-height: 70px; resize: vertical; }
     </div>
 
     <!-- ══════════════════════════════════ -->
-    <!--  BILLING / FOLIO                  -->
+    <!--  BILLING DASHBOARD                -->
     <!-- ══════════════════════════════════ -->
     <div class="page" id="page-billing">
       <div class="stats-row" style="grid-template-columns:repeat(4,1fr);margin-bottom:16px;">
-        <div class="stat-box"><div class="stat-label">Collected Today</div><div class="stat-value" style="color:#2E7D32;font-size:20px;">LKR 245,000</div><div class="stat-sub">8 payments</div></div>
-        <div class="stat-box"><div class="stat-label">Pending Bills</div><div class="stat-value" style="color:#E65100;font-size:20px;">LKR 89,500</div><div class="stat-sub">3 invoices</div></div>
-        <div class="stat-box"><div class="stat-label">City Ledger</div><div class="stat-value" style="color:#7B1FA2;font-size:20px;">LKR 134,000</div><div class="stat-sub">5 corp accounts</div></div>
-        <div class="stat-box"><div class="stat-label">Monthly Total</div><div class="stat-value" style="color:var(--primary);font-size:20px;">LKR 7.4M</div><div class="stat-sub"><span class="up">↑ 18%</span></div></div>
+        <div class="stat-box"><div class="stat-label">Total Outstanding</div><div class="stat-value" style="color:#C62828;" id="kpi-outstanding">—</div><div class="stat-sub" id="kpi-out-sub">pending bills</div></div>
+        <div class="stat-box"><div class="stat-label">Collected Today</div><div class="stat-value" style="color:#2E7D32;" id="kpi-collected">—</div><div class="stat-sub">Cash + Card</div></div>
+        <div class="stat-box"><div class="stat-label">City Ledger</div><div class="stat-value" style="color:#7B1FA2;" id="kpi-cityledger">—</div><div class="stat-sub" id="kpi-cl-sub">corp accounts</div></div>
+        <div class="stat-box"><div class="stat-label">Monthly Revenue</div><div class="stat-value" style="color:var(--primary);">LKR 7.4M</div><div class="stat-sub"><span class="up">↑ 18%</span> vs last month</div></div>
       </div>
-      <div class="card">
-        <div class="card-header">
-          <span>💳</span>
-          <div class="card-title">Invoice / Folio List</div>
-          <div style="margin-left:auto;display:flex;gap:8px;">
-            <div class="search-wrap"><input type="text" placeholder="Search folio..."></div>
-            <button class="btn btn-primary btn-sm">＋ New Invoice</button>
+      <div style="display:grid;grid-template-columns:2fr 1fr;gap:16px;">
+        <div class="card">
+          <div class="card-header">
+            <span>💳</span><div class="card-title">Guest Folios & Bill Status</div>
+            <div style="display:flex;gap:6px;margin-left:auto;flex-wrap:wrap;">
+              <button class="filter-chip active" onclick="billFilter('all',this)">All</button>
+              <button class="filter-chip" onclick="billFilter('pending',this)">Pending</button>
+              <button class="filter-chip" onclick="billFilter('partial',this)">Partial</button>
+              <button class="filter-chip" onclick="billFilter('paid',this)">Paid</button>
+            </div>
+            <div class="search-wrap" style="margin-left:8px;"><input type="text" placeholder="Search..." oninput="billSearch(this.value)"></div>
+          </div>
+          <table class="pms-table">
+            <thead><tr><th>Folio #</th><th>Guest</th><th>Room</th><th>Check-out</th><th style="text-align:right">Charges</th><th style="text-align:right">Paid</th><th style="text-align:right">Balance</th><th>Status</th><th>Actions</th></tr></thead>
+            <tbody id="billing-tbody"></tbody>
+          </table>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:14px;">
+          <div class="card">
+            <div class="card-header"><span>📊</span><div class="card-title">Payment Methods (Today)</div></div>
+            <div class="card-body" id="pay-methods-chart"></div>
+          </div>
+          <div class="card">
+            <div class="card-header"><span>⚡</span><div class="card-title">Quick Actions</div></div>
+            <div class="card-body" style="display:flex;flex-direction:column;gap:8px;">
+              <button class="btn btn-outline" onclick="showPage('folio')" style="justify-content:flex-start;">📄 Open Guest Folio</button>
+              <button class="btn btn-outline" onclick="showPage('payment')" style="justify-content:flex-start;">💰 Process Payment</button>
+              <button class="btn btn-outline" onclick="showPage('cityledger')" style="justify-content:flex-start;">🏢 City Ledger</button>
+              <button class="btn btn-outline" onclick="toast('📧 Statements sent','success')" style="justify-content:flex-start;">📧 Email All Statements</button>
+              <button class="btn btn-outline" onclick="window.print()" style="justify-content:flex-start;">🖨️ Print Billing Report</button>
+            </div>
           </div>
         </div>
-        <table class="pms-table">
-          <thead><tr><th>Folio #</th><th>Guest</th><th>Room</th><th>Stay Period</th><th>Room Charges</th><th>Extras</th><th>Total</th><th>Payment</th><th>Status</th><th></th></tr></thead>
-          <tbody id="billing-tbody"></tbody>
-        </table>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════ -->
+    <!--  GUEST FOLIO                      -->
+    <!-- ══════════════════════════════════ -->
+    <div class="page" id="page-folio">
+      <!-- guest chips -->
+      <div id="folio-chips" style="margin-bottom:14px;"></div>
+      <!-- header -->
+      <div class="folio-header-box" id="folio-header-box"></div>
+      <div style="display:grid;grid-template-columns:2fr 1fr;gap:16px;">
+        <!-- charges table -->
+        <div class="card">
+          <div class="card-header">
+            <span>📄</span><div class="card-title">Folio Transactions</div>
+            <div style="margin-left:auto;display:flex;gap:8px;">
+              <select class="form-control" style="width:auto;font-size:11px;padding:4px 8px;" onchange="folioDeptFilter(this.value)">
+                <option value="">All Departments</option>
+                <option>Room</option><option>F&B</option><option>Laundry</option><option>Spa</option><option>Mini Bar</option><option>Transport</option><option>Payment</option>
+              </select>
+              <button class="btn btn-primary btn-sm" onclick="openModal('modal-postcharge')">＋ Post Charge</button>
+            </div>
+          </div>
+          <table class="pms-table">
+            <thead><tr><th>Date</th><th>Description</th><th>Dept</th><th style="text-align:right">Debit</th><th style="text-align:right">Credit</th><th style="text-align:right">Running Bal.</th><th>Action</th></tr></thead>
+            <tbody id="folio-charges-tbody"></tbody>
+            <tfoot id="folio-charges-tfoot"></tfoot>
+          </table>
+        </div>
+        <!-- summary + settle -->
+        <div style="display:flex;flex-direction:column;gap:14px;">
+          <div class="card">
+            <div class="card-header"><span>📊</span><div class="card-title">Bill Summary</div></div>
+            <div class="card-body" id="folio-summary"></div>
+          </div>
+          <div class="card">
+            <div class="card-header"><span>💳</span><div class="card-title">Quick Settle</div></div>
+            <div class="card-body">
+              <div class="form-group"><label class="form-label">Amount (LKR)</label><input class="form-control" type="number" id="qs-amount" placeholder="0"></div>
+              <div class="form-group"><label class="form-label">Method</label>
+                <select class="form-control" id="qs-method"><option>Cash</option><option>Credit Card</option><option>Debit Card</option><option>Bank Transfer</option><option>City Ledger</option></select>
+              </div>
+              <div style="display:flex;gap:8px;">
+                <button class="btn btn-outline" style="flex:1;" onclick="qsFillBalance()">Fill Balance</button>
+                <button class="btn btn-success" style="flex:1;" onclick="qsPostPayment()">✓ Post</button>
+              </div>
+              <button class="btn btn-primary" style="width:100%;margin-top:8px;justify-content:center;" onclick="showPage('payment')">Open Full Payment Screen →</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header"><span>⚡</span><div class="card-title">Actions</div></div>
+            <div class="card-body" style="display:flex;flex-direction:column;gap:7px;">
+              <button class="btn btn-outline" onclick="toast('📧 Folio emailed to guest')">📧 Email Folio</button>
+              <button class="btn btn-outline" onclick="window.print()">🖨️ Print Folio</button>
+              <button class="btn btn-outline" onclick="showPage('cityledger')">🏢 Transfer to City Ledger</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════ -->
+    <!--  PAYMENT / RECEIPT                -->
+    <!-- ══════════════════════════════════ -->
+    <div class="page" id="page-payment">
+      <!-- step bar -->
+      <div class="step-bar" id="pay-step-bar">
+        <div class="step-item s-active" id="ps-1">① Select Guest</div>
+        <div class="step-item" id="ps-2">② Amount</div>
+        <div class="step-item" id="ps-3">③ Method</div>
+        <div class="step-item" id="ps-4">④ Receipt</div>
+      </div>
+      <div style="display:grid;grid-template-columns:2fr 1fr;gap:16px;">
+        <div>
+          <!-- Step 1 -->
+          <div class="card" id="pay-panel-1">
+            <div class="card-header"><span>👤</span><div class="card-title">Select Guest / Reservation</div></div>
+            <div class="card-body">
+              <div class="form-group"><label class="form-label">Search Guest or Room</label><input class="form-control" id="pay-guest-search" placeholder="Room number or guest name..." oninput="payGuestSearch(this.value)"></div>
+              <div id="pay-guest-results"></div>
+            </div>
+          </div>
+          <!-- Selected guest info -->
+          <div class="card" id="pay-panel-sel" style="display:none;margin-top:14px;">
+            <div class="card-header"><span>🏷️</span><div class="card-title">Selected Guest</div>
+              <button class="btn btn-ghost btn-sm" onclick="payReset()" style="margin-left:auto;">Change</button>
+            </div>
+            <div class="card-body" id="pay-sel-info"></div>
+          </div>
+          <!-- Step 2: Amount -->
+          <div class="card" id="pay-panel-2" style="display:none;margin-top:14px;">
+            <div class="card-header"><span>💵</span><div class="card-title">Enter Payment Amount</div></div>
+            <div class="card-body">
+              <div style="background:var(--bg);border-radius:8px;padding:12px;margin-bottom:12px;font-size:12px;">
+                <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span>Total Charges</span><span style="font-family:'IBM Plex Mono',monospace;font-weight:600;" id="pa-charges">—</span></div>
+                <div style="display:flex;justify-content:space-between;margin-bottom:3px;color:#2E7D32;"><span>Paid</span><span style="font-family:'IBM Plex Mono',monospace;" id="pa-paid">—</span></div>
+                <div style="display:flex;justify-content:space-between;font-weight:700;font-size:14px;border-top:1px solid var(--border);padding-top:7px;margin-top:4px;"><span>Balance Due</span><span style="font-family:'IBM Plex Mono',monospace;color:#C62828;" id="pa-balance">—</span></div>
+              </div>
+              <div style="font-size:26px;font-weight:700;font-family:'IBM Plex Mono',monospace;text-align:center;border:2px solid var(--border);border-radius:8px;padding:10px;margin-bottom:10px;background:var(--bg);letter-spacing:2px;" id="numpad-disp">0</div>
+              <div class="numpad">
+                <button class="numpad-btn" onclick="numPress('7')">7</button>
+                <button class="numpad-btn" onclick="numPress('8')">8</button>
+                <button class="numpad-btn" onclick="numPress('9')">9</button>
+                <button class="numpad-btn" onclick="numPress('4')">4</button>
+                <button class="numpad-btn" onclick="numPress('5')">5</button>
+                <button class="numpad-btn" onclick="numPress('6')">6</button>
+                <button class="numpad-btn" onclick="numPress('1')">1</button>
+                <button class="numpad-btn" onclick="numPress('2')">2</button>
+                <button class="numpad-btn" onclick="numPress('3')">3</button>
+                <button class="numpad-btn zero" onclick="numPress('0')">0</button>
+                <button class="numpad-btn" onclick="numPress('.')">.</button>
+                <button class="numpad-btn clr" onclick="numPress('C')">C</button>
+                <button class="numpad-btn" onclick="numPress('00')">00</button>
+                <button class="numpad-btn" onclick="numPress('000')">000</button>
+                <button class="numpad-btn clr" onclick="numPress('DEL')">⌫</button>
+              </div>
+              <div style="display:flex;gap:8px;margin-top:10px;">
+                <button class="btn btn-outline" style="flex:1;" onclick="numFillBalance()">Full Balance</button>
+                <button class="btn btn-primary" style="flex:1;" onclick="payGoStep3()">Next: Method →</button>
+              </div>
+            </div>
+          </div>
+          <!-- Step 3: Method -->
+          <div class="card" id="pay-panel-3" style="display:none;margin-top:14px;">
+            <div class="card-header"><span>💳</span><div class="card-title">Payment Method</div></div>
+            <div class="card-body">
+              <div style="display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;">
+                <button class="pay-method-btn" onclick="pickMethod('Cash',this)"><span class="pm-icon">💵</span><span class="pm-label">Cash</span></button>
+                <button class="pay-method-btn" onclick="pickMethod('Credit Card',this)"><span class="pm-icon">💳</span><span class="pm-label">Credit Card</span></button>
+                <button class="pay-method-btn" onclick="pickMethod('Debit Card',this)"><span class="pm-icon">🏦</span><span class="pm-label">Debit Card</span></button>
+                <button class="pay-method-btn" onclick="pickMethod('Bank Transfer',this)"><span class="pm-icon">🔁</span><span class="pm-label">Bank Transfer</span></button>
+                <button class="pay-method-btn" onclick="pickMethod('City Ledger',this)"><span class="pm-icon">🏢</span><span class="pm-label">City Ledger</span></button>
+              </div>
+              <div id="method-extra"></div>
+              <div style="display:flex;gap:8px;margin-top:10px;">
+                <button class="btn btn-outline" onclick="payGoStep2()">← Back</button>
+                <button class="btn btn-success" style="flex:1;" onclick="processPaymentNow()">✓ Process Payment</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Right: Receipt + History -->
+        <div style="display:flex;flex-direction:column;gap:14px;">
+          <div class="card">
+            <div class="card-header"><span>🧾</span><div class="card-title">Receipt</div>
+              <button class="btn btn-outline btn-sm" onclick="window.print()" style="margin-left:auto;">🖨️ Print</button>
+            </div>
+            <div class="card-body" style="padding:12px;">
+              <div class="receipt-box">
+                <div class="receipt-hotel">
+                  <h3>🏨 LUXE GRAND HOTEL</h3>
+                  <p>123 Galle Road, Colombo 03</p>
+                  <p>Tel: +94 11 234 5678</p>
+                </div>
+                <hr class="rcpt-dashes">
+                <div id="receipt-body" style="color:var(--text-3);text-align:center;padding:16px 0;font-size:11px;">Select a guest to preview</div>
+                <hr class="rcpt-dashes">
+                <div style="text-align:center;font-size:10px;color:var(--text-3);">Thank you for your stay!</div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header"><span>🕐</span><div class="card-title">Recent Payments</div></div>
+            <div id="pay-history-list"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════ -->
+    <!--  CITY LEDGER                      -->
+    <!-- ══════════════════════════════════ -->
+    <div class="page" id="page-cityledger">
+      <div class="stats-row" style="grid-template-columns:repeat(4,1fr);margin-bottom:16px;">
+        <div class="stat-box"><div class="stat-label">Total Outstanding</div><div class="stat-value" style="color:#7B1FA2;" id="cl-total">—</div><div class="stat-sub">Corp balance</div></div>
+        <div class="stat-box"><div class="stat-label">Active Accounts</div><div class="stat-value" id="cl-count">—</div><div class="stat-sub">Corporate clients</div></div>
+        <div class="stat-box"><div class="stat-label">Over Credit Limit</div><div class="stat-value" style="color:#C62828;" id="cl-over">—</div><div class="stat-sub">Accounts</div></div>
+        <div class="stat-box"><div class="stat-label">Received (Month)</div><div class="stat-value" style="color:#2E7D32;">LKR 280K</div><div class="stat-sub">Corp payments</div></div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+        <div class="card">
+          <div class="card-header"><span>🏢</span><div class="card-title">Corporate Accounts</div>
+            <button class="btn btn-primary btn-sm" style="margin-left:auto;" onclick="openModal('modal-newcorp')">＋ Add Account</button>
+          </div>
+          <div style="padding:12px 14px 14px;" id="cl-accounts-list"></div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:14px;">
+          <div class="card" id="cl-detail-card">
+            <div class="card-header"><span>📋</span><div class="card-title" id="cl-detail-name">Select an account</div>
+              <button class="btn btn-success btn-sm no-print" id="cl-pay-btn" style="display:none;margin-left:auto;" onclick="openModal('modal-clpay')">💰 Post Payment</button>
+            </div>
+            <div id="cl-detail-body" style="padding:24px;text-align:center;color:var(--text-3);font-size:13px;">
+              <div style="font-size:36px;margin-bottom:10px;">🏢</div>Select an account
+            </div>
+          </div>
+          <div class="card" id="cl-inv-card" style="display:none;">
+            <div class="card-header"><span>📄</span><div class="card-title">Invoices</div>
+              <button class="btn btn-primary btn-sm" style="margin-left:auto;" onclick="openModal('modal-clinv')">＋ Invoice</button>
+            </div>
+            <div id="cl-inv-list"></div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -1620,6 +1962,98 @@ textarea.form-control { min-height: 70px; resize: vertical; }
   </div><!-- /content -->
 </div><!-- /main -->
 
+<!-- ══ MODAL: Post Charge ══ -->
+<div class="modal-bg" id="modal-postcharge">
+  <div class="modal">
+    <div class="modal-head"><span>➕</span><div class="modal-title">Post Charge to Folio</div><button class="modal-close" onclick="closeModal('modal-postcharge')">✕</button></div>
+    <div class="modal-body">
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">Date</label><input class="form-control" type="date" id="pc-date"></div>
+        <div class="form-group"><label class="form-label">Department</label>
+          <select class="form-control" id="pc-dept"><option>Room</option><option>F&B</option><option>Laundry</option><option>Spa</option><option>Mini Bar</option><option>Transport</option><option>Misc</option></select>
+        </div>
+      </div>
+      <div class="form-group"><label class="form-label">Description</label><input class="form-control" id="pc-desc" placeholder="e.g. Restaurant — Dinner for 2 pax"></div>
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">Amount (LKR)</label><input class="form-control" type="number" id="pc-amount" placeholder="0"></div>
+        <div class="form-group"><label class="form-label">Type</label>
+          <select class="form-control" id="pc-type"><option value="debit">Debit (Charge)</option><option value="credit">Credit (Adjustment)</option></select>
+        </div>
+      </div>
+    </div>
+    <div class="modal-foot">
+      <button class="btn btn-outline" onclick="closeModal('modal-postcharge')">Cancel</button>
+      <button class="btn btn-primary" onclick="doPostCharge()">✓ Post Charge</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══ MODAL: CL Post Payment ══ -->
+<div class="modal-bg" id="modal-clpay">
+  <div class="modal">
+    <div class="modal-head"><span>💰</span><div class="modal-title">Post City Ledger Payment</div><button class="modal-close" onclick="closeModal('modal-clpay')">✕</button></div>
+    <div class="modal-body">
+      <div class="form-group"><label class="form-label">Company</label><input class="form-control" id="clp-company" readonly></div>
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">Amount (LKR)</label><input class="form-control" type="number" id="clp-amount" placeholder="0"></div>
+        <div class="form-group"><label class="form-label">Date</label><input class="form-control" type="date" id="clp-date"></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">Method</label><select class="form-control" id="clp-method"><option>Bank Transfer</option><option>Cheque</option><option>Cash</option></select></div>
+        <div class="form-group"><label class="form-label">Reference #</label><input class="form-control" id="clp-ref" placeholder="TXN/Cheque #"></div>
+      </div>
+    </div>
+    <div class="modal-foot">
+      <button class="btn btn-outline" onclick="closeModal('modal-clpay')">Cancel</button>
+      <button class="btn btn-success" onclick="doClPayment()">✓ Post Payment</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══ MODAL: New Corp Account ══ -->
+<div class="modal-bg" id="modal-newcorp">
+  <div class="modal">
+    <div class="modal-head"><span>🏢</span><div class="modal-title">Add Corporate Account</div><button class="modal-close" onclick="closeModal('modal-newcorp')">✕</button></div>
+    <div class="modal-body">
+      <div class="form-group"><label class="form-label">Company Name *</label><input class="form-control" id="nc-name" placeholder="e.g. ABC Corporation Ltd"></div>
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">Contact Person</label><input class="form-control" id="nc-contact"></div>
+        <div class="form-group"><label class="form-label">Email</label><input class="form-control" type="email" id="nc-email"></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">Credit Limit (LKR)</label><input class="form-control" type="number" id="nc-limit" placeholder="250000"></div>
+        <div class="form-group"><label class="form-label">Payment Terms</label><select class="form-control"><option>Net 30</option><option>Net 15</option><option>Net 60</option></select></div>
+      </div>
+    </div>
+    <div class="modal-foot">
+      <button class="btn btn-outline" onclick="closeModal('modal-newcorp')">Cancel</button>
+      <button class="btn btn-primary" onclick="doAddCorp()">✓ Create Account</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══ MODAL: CL Invoice ══ -->
+<div class="modal-bg" id="modal-clinv">
+  <div class="modal">
+    <div class="modal-head"><span>📄</span><div class="modal-title">New City Ledger Invoice</div><button class="modal-close" onclick="closeModal('modal-clinv')">✕</button></div>
+    <div class="modal-body">
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">Reservation #</label><input class="form-control" placeholder="R-XXXX"></div>
+        <div class="form-group"><label class="form-label">Amount (LKR)</label><input class="form-control" type="number" placeholder="0"></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">Invoice Date</label><input class="form-control" type="date" id="inv-date2"></div>
+        <div class="form-group"><label class="form-label">Due Date</label><input class="form-control" type="date" id="inv-due2"></div>
+      </div>
+      <div class="form-group"><label class="form-label">Description</label><textarea class="form-control" placeholder="Room charges, services..."></textarea></div>
+    </div>
+    <div class="modal-foot">
+      <button class="btn btn-outline" onclick="closeModal('modal-clinv')">Cancel</button>
+      <button class="btn btn-primary" onclick="closeModal('modal-clinv');toast('✅ Invoice created & emailed')">✓ Create Invoice</button>
+    </div>
+  </div>
+</div>
+
 <!-- ══════════════════════════════════════════ -->
 <!-- MODAL: New Reservation                    -->
 <!-- ══════════════════════════════════════════ -->
@@ -1758,19 +2192,22 @@ const billingData = [
 
 // ═══════════ NAVIGATION ═══════════
 const pageMeta = {
-  dashboard: ['Dashboard', 'Overview of today\'s operations'],
-  stayview: ['Stay View', 'Graphical timeline of room bookings'],
-  frontdesk: ['Front Desk', 'All in-house and arriving guests'],
-  reservations: ['Reservations', 'All bookings and reservation management'],
-  checkin: ['Check-In', 'Process guest arrivals'],
-  checkout: ['Check-Out', 'Process guest departures'],
-  housekeeping: ['Housekeeping', 'Room status and cleaning assignments'],
-  billing: ['Billing / Folio', 'Guest folios, invoices and payments'],
-  channels: ['Channel Manager', 'OTA rates, availability and sync'],
-  reports: ['Reports & Analytics', 'Occupancy, revenue and performance data'],
-  nightaudit: ['Night Audit', 'End-of-day reconciliation'],
-  guests: ['Guest Profiles', 'Guest history and profile management'],
-  settings: ['Settings', 'Hotel configuration and preferences'],
+  dashboard:   ['Dashboard',         'Overview of today\'s operations'],
+  stayview:    ['Stay View',         'Graphical timeline of room bookings'],
+  frontdesk:   ['Front Desk',        'All in-house and arriving guests'],
+  reservations:['Reservations',      'All bookings and reservation management'],
+  checkin:     ['Check-In',          'Process guest arrivals'],
+  checkout:    ['Check-Out',         'Process guest departures'],
+  housekeeping:['Housekeeping',      'Room status and cleaning assignments'],
+  billing:     ['Billing Dashboard', 'Settlement overview & receivables'],
+  folio:       ['Guest Folio',       'Charge posting & detailed folio view'],
+  payment:     ['Payment / Receipt', 'Process payments and issue receipts'],
+  cityledger:  ['City Ledger',       'Corporate & travel agent billing'],
+  channels:    ['Channel Manager',   'OTA rates, availability and sync'],
+  reports:     ['Reports & Analytics','Occupancy, revenue and performance data'],
+  nightaudit:  ['Night Audit',       'End-of-day reconciliation'],
+  guests:      ['Guest Profiles',    'Guest history and profile management'],
+  settings:    ['Settings',          'Hotel configuration and preferences'],
 };
 
 function showPage(name) {
@@ -1783,16 +2220,23 @@ function showPage(name) {
   document.getElementById('page-heading').textContent = meta[0];
   document.getElementById('page-sub').textContent = meta[1];
 
-  if (name === 'dashboard') renderDashboard();
-  if (name === 'stayview') renderStayView();
-  if (name === 'frontdesk') renderFrontDesk();
+  if (name === 'dashboard')    renderDashboard();
+  if (name === 'stayview')     renderStayView();
+  if (name === 'frontdesk')    renderFrontDesk();
   if (name === 'reservations') renderReservations();
-  if (name === 'checkin') renderCheckin();
-  if (name === 'checkout') renderCheckout();
+  if (name === 'checkin')      renderCheckin();
+  if (name === 'checkout')     renderCheckout();
   if (name === 'housekeeping') renderHousekeeping();
-  if (name === 'billing') renderBilling();
-  if (name === 'channels') renderChannels();
-  if (name === 'guests') renderGuests();
+  if (name === 'billing')      renderBillingDash();
+  if (name === 'folio')        { renderFolioChips(); renderFolio(); }
+  if (name === 'payment')      { payReset(); renderPayHistory(); }
+  if (name === 'cityledger')   { renderClKPIs(); renderClList(); }
+  if (name === 'channels')     renderChannels();
+  if (name === 'guests')       renderGuests();
+
+  updatePrintMenu(name);
+  closePrintMenu();
+  currentPage = name;
 }
 
 // ═══════════ RENDER HELPERS ═══════════
@@ -1806,7 +2250,8 @@ const statusBadge = (s) => {
   return `<span class="badge ${map[s]||''}">${label[s]||s}</span>`;
 };
 
-const fmt = n => 'LKR ' + n.toLocaleString();
+const fmt  = n => 'LKR ' + Number(n).toLocaleString();
+const fmtN = n => Number(n).toLocaleString();
 const guestInitials = g => (g.fname||g.name||'?')[0].toUpperCase() + ((g.lname||g.name?.split(' ')[1]||'')[0]||'').toUpperCase();
 const avatarColors = ['#1565C0','#2E7D32','#880E4F','#4A148C','#BF360C','#01579B','#006064'];
 const avatarColor = (i) => avatarColors[i % avatarColors.length];
@@ -2077,22 +2522,571 @@ function cycleHKStatus(num) {
 }
 
 // ═══════════ BILLING ═══════════
-function renderBilling() {
-  document.getElementById('billing-tbody').innerHTML = billingData.map((b,i) => `<tr>
-    <td class="mono">${b.folio}</td>
-    <td>${b.guest}</td>
-    <td><strong>${b.room}</strong></td>
-    <td style="font-size:11px;color:var(--text-3);">${b.period}</td>
-    <td class="mono" style="font-size:12px;">${fmt(b.room_c)}</td>
-    <td class="mono" style="font-size:12px;">${fmt(b.extras)}</td>
-    <td class="mono" style="font-weight:700;color:var(--primary)">${fmt(b.total)}</td>
-    <td style="font-size:11px;">${b.payment}</td>
-    <td>${statusBadge(b.status)}</td>
-    <td style="white-space:nowrap;">
-      <button class="btn btn-ghost btn-sm">🖨️</button>
-      <button class="btn btn-ghost btn-sm">📧</button>
-    </td>
-  </tr>`).join('');
+// ═══════════ BILLING DATA ═══════════
+const folioCharges = {
+  'R-0041': [
+    { id:'C001', date:'2024-03-05', desc:'Room Charge — Deluxe Double (EP)',  dept:'Room',    type:'debit',  amount:18000 },
+    { id:'C002', date:'2024-03-06', desc:'Room Charge — Deluxe Double (EP)',  dept:'Room',    type:'debit',  amount:18000 },
+    { id:'C003', date:'2024-03-06', desc:'Restaurant — Dinner (2 pax)',        dept:'F&B',     type:'debit',  amount:4800  },
+    { id:'C004', date:'2024-03-07', desc:'Room Charge — Deluxe Double (EP)',  dept:'Room',    type:'debit',  amount:18000 },
+    { id:'C005', date:'2024-03-07', desc:'Laundry Service',                   dept:'Laundry', type:'debit',  amount:1200  },
+    { id:'C006', date:'2024-03-07', desc:'Mini Bar',                          dept:'Mini Bar',type:'debit',  amount:2400  },
+    { id:'C007', date:'2024-03-07', desc:'Payment — Advance (Cash)',           dept:'Payment', type:'credit', amount:90000 },
+  ],
+  'R-0042': [
+    { id:'C010', date:'2024-03-07', desc:'Room Charge — Presidential Suite (BB)', dept:'Room',     type:'debit',  amount:45000 },
+    { id:'C011', date:'2024-03-07', desc:'Airport Transfer',                       dept:'Transport',type:'debit',  amount:4500  },
+    { id:'C012', date:'2024-03-07', desc:'Restaurant — Lunch',                    dept:'F&B',      type:'debit',  amount:3200  },
+    { id:'C013', date:'2024-03-07', desc:'Spa & Wellness',                        dept:'Spa',      type:'debit',  amount:8500  },
+    { id:'C014', date:'2024-03-08', desc:'Room Charge — Presidential Suite (BB)', dept:'Room',     type:'debit',  amount:45000 },
+    { id:'C015', date:'2024-03-08', desc:'Mini Bar — Premium',                    dept:'Mini Bar', type:'debit',  amount:4200  },
+  ],
+  'R-0043': [
+    { id:'C020', date:'2024-03-07', desc:'Room Charge — Superior Twin (EP)', dept:'Room',    type:'debit',  amount:12000 },
+    { id:'C021', date:'2024-03-07', desc:'Restaurant — Dinner',              dept:'F&B',     type:'debit',  amount:2800  },
+    { id:'C022', date:'2024-03-08', desc:'Room Charge — Superior Twin (EP)', dept:'Room',    type:'debit',  amount:12000 },
+    { id:'C023', date:'2024-03-08', desc:'Laundry',                          dept:'Laundry', type:'debit',  amount:800   },
+    { id:'C024', date:'2024-03-08', desc:'Payment — Partial (Cash)',          dept:'Payment', type:'credit', amount:25600 },
+    { id:'C025', date:'2024-03-09', desc:'Room Charge — Superior Twin (EP)', dept:'Room',    type:'debit',  amount:12000 },
+    { id:'C026', date:'2024-03-10', desc:'Room Charge — Superior Twin (EP)', dept:'Room',    type:'debit',  amount:12000 },
+  ],
+  'R-0046': [
+    { id:'C030', date:'2024-03-05', desc:'Room Charge — Standard Single (HB)', dept:'Room',    type:'debit',  amount:8500  },
+    { id:'C031', date:'2024-03-06', desc:'Room Charge — Standard Single (HB)', dept:'Room',    type:'debit',  amount:8500  },
+    { id:'C032', date:'2024-03-07', desc:'Payment — Full (Debit Card)',         dept:'Payment', type:'credit', amount:27300 },
+  ],
+};
+
+const paymentHistory = [
+  { id:'P-1001', guest:'Kasun Perera',     room:'301', amount:90000, method:'Cash',        ref:'—',             date:'2024-03-05' },
+  { id:'P-1002', guest:'Ravi Kumar',       room:'201', amount:25600, method:'Cash',        ref:'—',             date:'2024-03-08' },
+  { id:'P-1003', guest:'Dilrukshi Fernando',room:'101',amount:27300, method:'Debit Card',  ref:'MASTER****9873',date:'2024-03-07' },
+];
+
+const cityLedgerData = [
+  { id:'CL-001', company:'Samsung Sri Lanka',   contact:'James Park',       limit:500000, used:186000, invoices:3, last:'2024-03-08', status:'active' },
+  { id:'CL-002', company:'Unilever Lanka Ltd',  contact:'Priya Mendis',     limit:300000, used:78500,  invoices:2, last:'2024-03-05', status:'active' },
+  { id:'CL-003', company:'MAS Holdings',        contact:'Ruchira Silva',    limit:400000, used:400000, invoices:5, last:'2024-03-01', status:'overlimit' },
+  { id:'CL-004', company:'John Keells Hotels',  contact:'Anjali Perera',    limit:250000, used:0,      invoices:0, last:'—',          status:'active' },
+  { id:'CL-005', company:'Hayleys PLC',         contact:'Sanjay Wijeratne', limit:350000, used:125000, invoices:1, last:'2024-02-28', status:'active' },
+];
+
+const clTransactions = {
+  'CL-001': [
+    { date:'2024-03-08', desc:'R-0047 — James Park, Rm 203 (4N)', type:'debit',  amount:62000 },
+    { date:'2024-03-05', desc:'R-0038 — Kim Ji-ho, Rm 202 (3N)',   type:'debit',  amount:48000 },
+    { date:'2024-03-01', desc:'R-0031 — Group booking',             type:'debit',  amount:76000 },
+    { date:'2024-02-28', desc:'Payment — Bank Transfer',            type:'credit', amount:76000 },
+  ],
+  'CL-002': [
+    { date:'2024-03-05', desc:'R-0035 — Priya Mendis, Rm 201 (2N)', type:'debit',  amount:48500 },
+    { date:'2024-02-25', desc:'R-0028 — Anjali Kumar, Rm 101 (3N)', type:'debit',  amount:30000 },
+    { date:'2024-02-20', desc:'Payment — Cheque #4521',              type:'credit', amount:50000 },
+  ],
+  'CL-003': [
+    { date:'2024-03-01', desc:'R-0040 — Group guests (5N)',          type:'debit',  amount:120000 },
+    { date:'2024-02-15', desc:'R-0025 — Ruchira Silva, Rm 401 (3N)',type:'debit',  amount:135000 },
+    { date:'2024-02-01', desc:'R-0018 — Group Booking (8N)',         type:'debit',  amount:145000 },
+  ],
+  'CL-005': [
+    { date:'2024-02-28', desc:'R-0033 — Sanjay, Rm 302 (5N)',       type:'debit',  amount:90000 },
+    { date:'2024-02-20', desc:'R-0029 — Team booking (3N)',          type:'debit',  amount:35000 },
+    { date:'2024-02-15', desc:'Payment — Bank Transfer',             type:'credit', amount:75000 },
+  ],
+};
+
+// ── HELPERS ──
+function calcBalance(resId) {
+  const ch = folioCharges[resId] || [];
+  const debits  = ch.filter(c=>c.type==='debit').reduce((s,c)=>s+c.amount,0);
+  const credits = ch.filter(c=>c.type==='credit').reduce((s,c)=>s+c.amount,0);
+  return { debits, credits, balance: debits - credits };
+}
+
+function billStatus(resId) {
+  const { debits, credits, balance } = calcBalance(resId);
+  if (debits === 0) return 'paid';
+  if (balance <= 0) return 'paid';
+  if (credits > 0)  return 'partial';
+  return 'pending';
+}
+
+function billStatusBadge(s) {
+  const map = { paid:'badge-paid', pending:'badge-pending', partial:'badge-partial' };
+  const lbl = { paid:'Paid', pending:'Pending', partial:'Partial' };
+  return `<span class="badge ${map[s]||''}">${lbl[s]||s}</span>`;
+}
+
+// ═══════════ BILLING DASHBOARD ═══════════
+let billCurrentFilter = 'all', billCurrentSearch = '';
+
+function renderBillingDash() {
+  // KPIs
+  let outstanding = 0, pendingCount = 0;
+  reservations.filter(r=>r.status!=='reserved').forEach(r => {
+    const { balance } = calcBalance(r.id);
+    if (balance > 0) { outstanding += balance; pendingCount++; }
+  });
+  const collected = paymentHistory.reduce((s,p)=>s+p.amount,0);
+  const clTotal   = cityLedgerData.reduce((s,c)=>s+c.used,0);
+  document.getElementById('kpi-outstanding').textContent = fmt(outstanding);
+  document.getElementById('kpi-out-sub').textContent     = pendingCount + ' pending bills';
+  document.getElementById('kpi-collected').textContent   = fmt(collected);
+  document.getElementById('kpi-cityledger').textContent  = fmt(clTotal);
+  document.getElementById('kpi-cl-sub').textContent      = cityLedgerData.filter(c=>c.used>0).length + ' corp accounts';
+
+  // Payment methods chart
+  const methods = [
+    { label:'Credit Card', amount:189400, color:'var(--primary)' },
+    { label:'Cash',        amount:145000, color:'#2E7D32' },
+    { label:'City Ledger', amount:86000,  color:'#7B1FA2' },
+    { label:'Debit Card',  amount:24600,  color:'#00838F' },
+  ];
+  const total = methods.reduce((s,m)=>s+m.amount,0);
+  document.getElementById('pay-methods-chart').innerHTML = methods.map(m=>`
+    <div style="margin-bottom:11px;">
+      <div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:3px;">
+        <span style="color:var(--text-2);">${m.label}</span>
+        <span style="font-family:'IBM Plex Mono',monospace;font-weight:600;">${fmt(m.amount)}</span>
+      </div>
+      <div style="height:6px;background:#E0E0E0;border-radius:3px;overflow:hidden;">
+        <div style="height:100%;width:${Math.round(m.amount/total*100)}%;background:${m.color};border-radius:3px;"></div>
+      </div>
+    </div>`).join('');
+
+  renderBillingTable();
+}
+
+function renderBillingTable() {
+  let data = reservations.filter(r=>r.status!=='reserved');
+  if (billCurrentFilter !== 'all') data = data.filter(r => billStatus(r.id) === billCurrentFilter);
+  if (billCurrentSearch) data = data.filter(r => (r.fname+' '+r.lname+r.room+r.id).toLowerCase().includes(billCurrentSearch.toLowerCase()));
+
+  document.getElementById('billing-tbody').innerHTML = data.map((r,i)=>{
+    const { debits, credits, balance } = calcBalance(r.id);
+    const bs = billStatus(r.id);
+    return `<tr>
+      <td class="mono" style="color:var(--text-3);">${r.id.replace('R-','F-')}</td>
+      <td><div style="display:flex;align-items:center;gap:8px;">
+        <div style="width:26px;height:26px;border-radius:50%;background:${avatarColor(i)};color:#fff;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;">${guestInitials(r)}</div>
+        <div><div style="font-weight:500;">${r.fname} ${r.lname}</div><div style="font-size:10px;color:var(--text-3);">${r.source}</div></div>
+      </div></td>
+      <td><strong>${r.room}</strong></td>
+      <td class="mono" style="font-size:11px;">${r.cout}</td>
+      <td style="text-align:right;font-family:'IBM Plex Mono',monospace;font-size:12px;">${fmtN(debits)}</td>
+      <td style="text-align:right;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#2E7D32;">${fmtN(credits)}</td>
+      <td style="text-align:right;font-family:'IBM Plex Mono',monospace;font-weight:700;color:${balance>0?'#C62828':'#2E7D32'};">${balance>0?fmtN(balance):'—'}</td>
+      <td>${billStatusBadge(bs)}</td>
+      <td style="white-space:nowrap;">
+        <button class="btn btn-ghost btn-sm" onclick="activeFolioRes='${r.id}';showPage('folio')">📄 Folio</button>
+        ${balance>0?`<button class="btn btn-success btn-sm" onclick="payPreselect='${r.id}';showPage('payment')">💰 Pay</button>`:'<span style="font-size:11px;color:#2E7D32;">✓ Settled</span>'}
+      </td>
+    </tr>`;
+  }).join('') || '<tr><td colspan="9" style="text-align:center;color:var(--text-3);padding:20px;">No records</td></tr>';
+}
+
+function billFilter(f, el) {
+  billCurrentFilter = f;
+  document.querySelectorAll('#page-billing .filter-chip').forEach(c=>c.classList.remove('active'));
+  el.classList.add('active');
+  renderBillingTable();
+}
+function billSearch(v) { billCurrentSearch=v; renderBillingTable(); }
+
+// ═══════════ FOLIO ═══════════
+let activeFolioRes = 'R-0041';
+let folioDeptF = '';
+
+function renderFolioChips() {
+  const res = reservations.filter(r=>r.status==='inhouse'||r.status==='checkout');
+  document.getElementById('folio-chips').innerHTML = res.map(r=>
+    `<div class="guest-chip${r.id===activeFolioRes?' active':''}" onclick="activeFolioRes='${r.id}';renderFolioChips();renderFolio();">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:700;">${r.room}</span>
+      ${r.fname} ${r.lname}
+      ${billStatus(r.id)==='paid'?'<span style="font-size:10px;color:#2E7D32;">✓</span>':''}
+    </div>`).join('');
+}
+
+function folioDeptFilter(v) { folioDeptF = v; renderFolio(); }
+
+function renderFolio() {
+  const r = reservations.find(x=>x.id===activeFolioRes);
+  if (!r) return;
+  const { debits, credits, balance } = calcBalance(r.id);
+  const bs = billStatus(r.id);
+
+  // Header
+  document.getElementById('folio-header-box').innerHTML = `
+    <div style="width:44px;height:44px;border-radius:50%;background:${avatarColor(0)};color:#fff;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:700;flex-shrink:0;">${guestInitials(r)}</div>
+    <div style="flex:1;">
+      <div class="folio-guest-name">${r.fname} ${r.lname} ${statusBadge(r.status)}</div>
+      <div style="font-size:11px;color:var(--text-3);">${r.nic} · ${r.nat} · ${r.phone}</div>
+      <div class="folio-meta">
+        <span>🏨 Room <strong>${r.room}</strong> — ${r.type}</span>
+        <span>📅 ${r.cin} → ${r.cout} (${r.nights}N)</span>
+        <span>👥 ${r.adults} Adults</span>
+        <span>📋 ${r.id}</span>
+        <span>🌐 ${r.source}</span>
+      </div>
+    </div>
+    <div class="folio-balance-box">
+      <div class="folio-balance-label">Balance Due</div>
+      <div class="folio-balance-amount" style="color:${balance>0?'#C62828':'#2E7D32'};">${fmt(Math.abs(balance))}</div>
+      <div style="margin-top:5px;">${billStatusBadge(bs)}</div>
+    </div>`;
+
+  // Charges table
+  const ch = (folioCharges[r.id]||[]).filter(c=>!folioDeptF||c.dept===folioDeptF);
+  let running = 0;
+  const rows = ch.map(c => {
+    if (c.amount===0) return '';
+    if (c.type==='debit')  running += c.amount;
+    if (c.type==='credit') running -= c.amount;
+    const deptKey = c.dept.replace(/\s/g,'').replace('&','');
+    return `<tr>
+      <td class="mono" style="font-size:11px;color:var(--text-3);">${c.date}</td>
+      <td>${c.desc}</td>
+      <td><span class="dept-tag dept-${deptKey}">${c.dept}</span></td>
+      <td style="text-align:right;font-family:'IBM Plex Mono',monospace;font-size:12px;">${c.type==='debit'?fmtN(c.amount):''}</td>
+      <td style="text-align:right;font-family:'IBM Plex Mono',monospace;font-size:12px;" class="charge-credit">${c.type==='credit'?fmtN(c.amount):''}</td>
+      <td class="${running>0?'running-pos':'running-zero'}">${fmtN(Math.abs(running))}</td>
+      <td><button class="btn btn-ghost btn-sm" onclick="voidFolioCharge('${r.id}','${c.id}')">🗑</button></td>
+    </tr>`;
+  }).join('');
+
+  document.getElementById('folio-charges-tbody').innerHTML = rows || '<tr><td colspan="7" style="text-align:center;color:var(--text-3);padding:16px;">No charges posted</td></tr>';
+  document.getElementById('folio-charges-tfoot').innerHTML = `
+    <tr style="background:var(--bg);font-weight:700;">
+      <td colspan="3" style="padding:9px 12px;font-size:12px;">TOTAL</td>
+      <td style="text-align:right;padding:9px 12px;font-family:'IBM Plex Mono',monospace;">${fmtN(debits)}</td>
+      <td style="text-align:right;padding:9px 12px;font-family:'IBM Plex Mono',monospace;color:#2E7D32;">${fmtN(credits)}</td>
+      <td style="text-align:right;padding:9px 12px;font-family:'IBM Plex Mono',monospace;font-weight:700;color:${balance>0?'#C62828':'#2E7D32'};">${fmtN(Math.abs(balance))}</td>
+      <td></td>
+    </tr>`;
+
+  // Summary
+  const byDept = {};
+  (folioCharges[r.id]||[]).filter(c=>c.type==='debit'&&c.amount>0).forEach(c=>{ byDept[c.dept]=(byDept[c.dept]||0)+c.amount; });
+  document.getElementById('folio-summary').innerHTML =
+    Object.entries(byDept).map(([dept,amt])=>
+      `<div class="folio-summary-row"><span style="color:var(--text-2);">${dept}</span><span style="font-family:'IBM Plex Mono',monospace;">${fmt(amt)}</span></div>`
+    ).join('') +
+    `<div class="folio-summary-row"><span style="color:var(--text-2);">Payments Received</span><span style="font-family:'IBM Plex Mono',monospace;color:#2E7D32;">(${fmt(credits)})</span></div>
+     <div class="folio-summary-row"><span>BALANCE DUE</span><span style="font-family:'IBM Plex Mono',monospace;font-size:17px;color:${balance>0?'#C62828':'#2E7D32'};">${fmt(Math.abs(balance))}</span></div>`;
+}
+
+function doPostCharge() {
+  const desc = document.getElementById('pc-desc').value.trim();
+  const amt  = parseFloat(document.getElementById('pc-amount').value);
+  if (!desc||!amt||amt<=0) { toast('Enter description and amount','error'); return; }
+  if (!folioCharges[activeFolioRes]) folioCharges[activeFolioRes]=[];
+  folioCharges[activeFolioRes].push({
+    id:'C'+Date.now(), date:document.getElementById('pc-date').value,
+    desc, dept:document.getElementById('pc-dept').value,
+    type:document.getElementById('pc-type').value, amount:amt,
+  });
+  closeModal('modal-postcharge');
+  renderFolio(); renderFolioChips();
+  toast('✅ Charge posted: ' + desc + ' — ' + fmt(amt));
+}
+
+function voidFolioCharge(resId, cid) {
+  if (!confirm('Void this charge?')) return;
+  if (folioCharges[resId]) folioCharges[resId] = folioCharges[resId].filter(c=>c.id!==cid);
+  renderFolio(); renderFolioChips();
+  toast('Charge voided');
+}
+
+function qsFillBalance() {
+  const { balance } = calcBalance(activeFolioRes);
+  document.getElementById('qs-amount').value = Math.max(0, balance);
+}
+
+function qsPostPayment() {
+  const amt = parseFloat(document.getElementById('qs-amount').value);
+  if (!amt||amt<=0) { toast('Enter amount','error'); return; }
+  const method = document.getElementById('qs-method').value;
+  if (!folioCharges[activeFolioRes]) folioCharges[activeFolioRes]=[];
+  folioCharges[activeFolioRes].push({ id:'P'+Date.now(), date:new Date().toISOString().split('T')[0], desc:`Payment — ${method}`, dept:'Payment', type:'credit', amount:amt });
+  paymentHistory.unshift({ id:'P-'+Date.now(), guest: activeFolioRes, room:'—', amount:amt, method, ref:'—', date:new Date().toISOString().split('T')[0] });
+  document.getElementById('qs-amount').value='';
+  renderFolio(); renderFolioChips();
+  toast('✅ Payment of ' + fmt(amt) + ' posted via ' + method);
+}
+
+// ═══════════ PAYMENT PAGE ═══════════
+let paySelectedRes = null, numVal = '0', payMethod = '', payPreselect = null;
+
+function payReset() {
+  paySelectedRes=null; numVal='0'; payMethod='';
+  document.getElementById('pay-panel-1').style.display='';
+  document.getElementById('pay-panel-sel').style.display='none';
+  document.getElementById('pay-panel-2').style.display='none';
+  document.getElementById('pay-panel-3').style.display='none';
+  const gs = document.getElementById('pay-guest-search');
+  if (gs) { gs.value=''; }
+  document.getElementById('pay-guest-results').innerHTML='';
+  setPayStep(1);
+  document.getElementById('receipt-body').innerHTML='<div style="color:var(--text-3);text-align:center;padding:16px 0;font-size:11px;">Select a guest to preview</div>';
+
+  // Pre-select if coming from billing page
+  if (payPreselect) {
+    const r = reservations.find(x=>x.id===payPreselect);
+    if (r && gs) { gs.value = r.fname+' '+r.lname; setTimeout(()=>{ payGuestSearch(gs.value); setTimeout(()=>paySelectGuest(r.id),150); },100); }
+    payPreselect = null;
+  }
+}
+
+function setPayStep(n) {
+  [1,2,3,4].forEach(i=>{
+    const el = document.getElementById('ps-'+i);
+    if (el) el.className = 'step-item'+(i<n?' s-done':i===n?' s-active':'');
+  });
+}
+
+function payGuestSearch(v) {
+  if (v.length<1) { document.getElementById('pay-guest-results').innerHTML=''; return; }
+  const matches = reservations.filter(r=>(r.fname+' '+r.lname+r.room+r.id).toLowerCase().includes(v.toLowerCase()));
+  document.getElementById('pay-guest-results').innerHTML = matches.map((r,i)=>{
+    const {balance} = calcBalance(r.id);
+    return `<div onclick="paySelectGuest('${r.id}')" style="display:flex;align-items:center;gap:10px;padding:9px;border:1px solid var(--border);border-radius:8px;cursor:pointer;margin-bottom:7px;transition:all 0.15s;" onmouseover="this.style.background='var(--primary-pale)';this.style.borderColor='var(--primary)'" onmouseout="this.style.background='';this.style.borderColor='var(--border)'">
+      <div style="width:32px;height:32px;border-radius:50%;background:${avatarColor(i)};color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:11px;flex-shrink:0;">${guestInitials(r)}</div>
+      <div style="flex:1;">
+        <div style="font-weight:600;">${r.fname} ${r.lname} <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;background:var(--bg);padding:2px 5px;border-radius:3px;">Rm ${r.room}</span></div>
+        <div style="font-size:10px;color:var(--text-3);">${r.type} · ${r.cin}→${r.cout}</div>
+      </div>
+      <div style="text-align:right;"><div style="font-family:'IBM Plex Mono',monospace;font-weight:700;color:${balance>0?'#C62828':'#2E7D32'};">${fmt(balance)}</div><div style="font-size:10px;color:var(--text-3);">Balance</div></div>
+    </div>`;
+  }).join('') || '<div style="color:var(--text-3);font-size:12px;padding:8px;">No results</div>';
+}
+
+function paySelectGuest(id) {
+  paySelectedRes = reservations.find(r=>r.id===id);
+  if (!paySelectedRes) return;
+  document.getElementById('pay-panel-1').style.display='none';
+  document.getElementById('pay-panel-sel').style.display='';
+  document.getElementById('pay-panel-2').style.display='';
+  const {debits, credits, balance} = calcBalance(id);
+  document.getElementById('pay-sel-info').innerHTML = `
+    <div style="display:flex;gap:14px;flex-wrap:wrap;">
+      <div><div style="font-size:10px;color:var(--text-3);">GUEST</div><div style="font-weight:600;">${paySelectedRes.fname} ${paySelectedRes.lname}</div></div>
+      <div><div style="font-size:10px;color:var(--text-3);">ROOM</div><div style="font-weight:600;">${paySelectedRes.room}</div></div>
+      <div><div style="font-size:10px;color:var(--text-3);">RES #</div><div style="font-weight:600;">${paySelectedRes.id}</div></div>
+      <div><div style="font-size:10px;color:var(--text-3);">BALANCE</div><div style="font-weight:700;color:#C62828;">${fmt(balance)}</div></div>
+    </div>`;
+  document.getElementById('pa-charges').textContent = fmt(debits);
+  document.getElementById('pa-paid').textContent    = fmt(credits);
+  document.getElementById('pa-balance').textContent = fmt(balance);
+  numVal = balance > 0 ? String(balance) : '0';
+  document.getElementById('numpad-disp').textContent = Number(numVal).toLocaleString();
+  setPayStep(2);
+  updateReceipt();
+}
+
+function numPress(k) {
+  if (k==='C') numVal='0';
+  else if (k==='DEL') numVal = numVal.length>1 ? numVal.slice(0,-1) : '0';
+  else if (k==='.' && numVal.includes('.')) return;
+  else if (numVal==='0' && k!=='.') numVal=k;
+  else numVal+=k;
+  document.getElementById('numpad-disp').textContent = Number(numVal).toLocaleString();
+  updateReceipt();
+}
+
+function numFillBalance() {
+  if (!paySelectedRes) return;
+  const {balance} = calcBalance(paySelectedRes.id);
+  numVal = String(Math.max(0,balance));
+  document.getElementById('numpad-disp').textContent = Number(numVal).toLocaleString();
+  updateReceipt();
+}
+
+function payGoStep3() {
+  if (!parseFloat(numVal)||parseFloat(numVal)<=0) { toast('Enter amount','error'); return; }
+  document.getElementById('pay-panel-3').style.display='';
+  setPayStep(3);
+}
+
+function payGoStep2() {
+  document.getElementById('pay-panel-3').style.display='none';
+  setPayStep(2);
+}
+
+function pickMethod(method, el) {
+  payMethod = method;
+  document.querySelectorAll('.pay-method-btn').forEach(b=>b.classList.remove('selected'));
+  el.classList.add('selected');
+  let extra = '';
+  if (method==='Credit Card'||method==='Debit Card') {
+    extra=`<div class="form-row"><div class="form-group"><label class="form-label">Card Last 4 Digits</label><input class="form-control" id="card-last4" maxlength="4" placeholder="4521"></div><div class="form-group"><label class="form-label">Card Type</label><select class="form-control" id="card-brand"><option>VISA</option><option>Mastercard</option><option>Amex</option></select></div></div>`;
+  } else if (method==='Cash') {
+    extra=`<div class="form-group"><label class="form-label">Cash Tendered (LKR)</label><input class="form-control" type="number" id="cash-in" placeholder="0" oninput="calcChange(this.value)"></div><div style="display:flex;justify-content:space-between;padding:9px;background:var(--bg);border-radius:6px;font-size:13px;font-weight:600;"><span>Change Due:</span><span id="change-out" style="font-family:'IBM Plex Mono',monospace;color:var(--primary);">—</span></div>`;
+  } else if (method==='Bank Transfer') {
+    extra=`<div class="form-group"><label class="form-label">Bank Reference #</label><input class="form-control" id="bank-ref" placeholder="TXN20240312"></div>`;
+  } else if (method==='City Ledger') {
+    extra=`<div class="form-group"><label class="form-label">Corporate Account</label><select class="form-control" id="cl-acc">${cityLedgerData.map(c=>`<option>${c.company}</option>`).join('')}</select></div>`;
+  }
+  document.getElementById('method-extra').innerHTML = extra;
+}
+
+function calcChange(v) {
+  const amt = parseFloat(numVal)||0;
+  const ten = parseFloat(v)||0;
+  const el  = document.getElementById('change-out');
+  if (el) el.textContent = ten>=amt ? fmt(ten-amt) : '—';
+}
+
+function processPaymentNow() {
+  const amt = parseFloat(numVal);
+  if (!amt||amt<=0) { toast('Invalid amount','error'); return; }
+  if (!payMethod)   { toast('Select a payment method','error'); return; }
+  if (!paySelectedRes) { toast('No guest selected','error'); return; }
+
+  let ref = payMethod;
+  if (payMethod==='Credit Card'||payMethod==='Debit Card') { const b=document.getElementById('card-brand')?.value||'CARD'; const l=document.getElementById('card-last4')?.value||'****'; ref=`${b}****${l}`; }
+  else if (payMethod==='Bank Transfer') ref = document.getElementById('bank-ref')?.value||'TXN—';
+  else if (payMethod==='City Ledger') ref = document.getElementById('cl-acc')?.value||'';
+
+  const today = new Date().toISOString().split('T')[0];
+  if (!folioCharges[paySelectedRes.id]) folioCharges[paySelectedRes.id]=[];
+  folioCharges[paySelectedRes.id].push({ id:'P'+Date.now(), date:today, desc:`Payment — ${payMethod} (${ref})`, dept:'Payment', type:'credit', amount:amt });
+  paymentHistory.unshift({ id:'P-'+Date.now(), guest:`${paySelectedRes.fname} ${paySelectedRes.lname}`, room:paySelectedRes.room, amount:amt, method:payMethod, ref, date:today });
+
+  updateReceipt(true);
+  renderPayHistory();
+  setPayStep(4);
+  document.getElementById('pay-panel-3').style.display='none';
+  toast('✅ Payment of ' + fmt(amt) + ' processed via ' + payMethod);
+}
+
+function updateReceipt(done=false) {
+  if (!paySelectedRes) return;
+  const r = paySelectedRes;
+  const amt = parseFloat(numVal)||0;
+  const {debits, credits} = calcBalance(r.id);
+  const newBal = Math.max(0, debits - credits - (done?0:amt));
+  const rcpNo  = 'RCP-'+Math.floor(Math.random()*9000+1000);
+  const now    = new Date().toLocaleString('en-GB');
+  document.getElementById('receipt-body').innerHTML = `
+    <div class="rcpt-row"><span>Receipt #</span><span>${rcpNo}</span></div>
+    <div class="rcpt-row"><span>Date/Time</span><span style="font-size:10px;">${now}</span></div>
+    <div class="rcpt-row"><span>Guest</span><span>${r.fname} ${r.lname}</span></div>
+    <div class="rcpt-row"><span>Room</span><span>${r.room}</span></div>
+    <div class="rcpt-row"><span>Res #</span><span>${r.id}</span></div>
+    <div class="rcpt-row"><span>Stay</span><span>${r.cin}→${r.cout}(${r.nights}N)</span></div>
+    <hr class="rcpt-dashes">
+    <div class="rcpt-row rcpt-total"><span>TOTAL DUE</span><span>${fmtN(debits)}</span></div>
+    <div class="rcpt-row rcpt-paid"><span>Paid (${payMethod||'—'})</span><span>${fmtN(amt)}</span></div>
+    <div class="rcpt-row" style="color:var(--primary);"><span>Remaining Bal.</span><span>${fmtN(newBal)}</span></div>
+    ${done?'<div class="rcpt-stamp">✓ PAYMENT RECEIVED</div>':''}
+    <hr class="rcpt-dashes">
+    <div style="text-align:center;font-size:10px;color:var(--text-3);">Cashier: Amal Mendis</div>`;
+}
+
+function renderPayHistory() {
+  const icons = { Cash:'💵','Credit Card':'💳','Debit Card':'🏦','Bank Transfer':'🔁','City Ledger':'🏢' };
+  document.getElementById('pay-history-list').innerHTML = paymentHistory.slice(0,6).map(p=>`
+    <div style="display:flex;align-items:center;gap:10px;padding:10px 14px;border-bottom:1px solid var(--border);font-size:12px;">
+      <div style="font-size:18px;">${icons[p.method]||'💳'}</div>
+      <div style="flex:1;"><div style="font-weight:500;">${p.guest} · Rm ${p.room}</div><div style="font-size:10px;color:var(--text-3);">${p.method} · ${p.date}</div></div>
+      <div style="font-family:'IBM Plex Mono',monospace;font-weight:700;color:#2E7D32;">+${fmt(p.amount)}</div>
+    </div>`).join('') || '<div style="padding:16px;text-align:center;color:var(--text-3);font-size:12px;">No payments today</div>';
+}
+
+// ═══════════ CITY LEDGER ═══════════
+let activeCL = null;
+
+function renderClKPIs() {
+  const total = cityLedgerData.reduce((s,c)=>s+c.used,0);
+  const count = cityLedgerData.filter(c=>c.status==='active').length;
+  const over  = cityLedgerData.filter(c=>c.status==='overlimit').length;
+  document.getElementById('cl-total').textContent = fmt(total);
+  document.getElementById('cl-count').textContent = count;
+  document.getElementById('cl-over').textContent  = over;
+}
+
+function renderClList(search='') {
+  const data = cityLedgerData.filter(c=>!search||c.company.toLowerCase().includes(search.toLowerCase()));
+  document.getElementById('cl-accounts-list').innerHTML = data.map(c=>{
+    const pct = Math.min(100,Math.round(c.used/c.limit*100));
+    const bc  = pct>=100?'#C62828':pct>=80?'#E65100':'var(--primary)';
+    return `<div class="cl-card${activeCL===c.id?' cl-selected':''}${c.status==='overlimit'?' cl-over':''}" onclick="selectCL('${c.id}')">
+      <div style="display:flex;align-items:center;gap:10px;">
+        <div style="font-size:24px;">🏢</div>
+        <div style="flex:1;"><div style="font-weight:600;font-size:13px;">${c.company}</div><div style="font-size:11px;color:var(--text-3);">${c.contact} · ${c.invoices} invoices</div></div>
+        <div style="text-align:right;"><div style="font-family:'IBM Plex Mono',monospace;font-weight:700;color:${pct>=100?'#C62828':'var(--text)'};">${fmt(c.used)}</div><div style="font-size:10px;color:var(--text-3);">of ${fmt(c.limit)}</div></div>
+      </div>
+      <div class="cl-bar"><div class="cl-bar-fill" style="width:${pct}%;background:${bc};"></div></div>
+      <div style="display:flex;justify-content:space-between;margin-top:4px;font-size:10px;color:var(--text-3);">
+        <span>${pct}% utilised</span><span>Last: ${c.last}</span>
+        <span>${billStatusBadge(c.used>0&&pct<100?'pending':pct>=100?'partial':'paid')}</span>
+      </div>
+    </div>`;
+  }).join('') || '<div style="color:var(--text-3);text-align:center;padding:20px;font-size:12px;">No accounts found</div>';
+}
+
+function selectCL(id) {
+  activeCL = id;
+  renderClList();
+  const c = cityLedgerData.find(x=>x.id===id);
+  if (!c) return;
+  document.getElementById('cl-detail-name').textContent = c.company;
+  document.getElementById('cl-pay-btn').style.display = '';
+  document.getElementById('clp-company').value = c.company;
+  document.getElementById('clp-date').value = new Date().toISOString().split('T')[0];
+  document.getElementById('cl-inv-card').style.display = '';
+
+  const tx = clTransactions[id] || [];
+  const pct = Math.min(100,Math.round(c.used/c.limit*100));
+  const bc  = pct>=100?'#C62828':pct>=80?'#E65100':'var(--primary)';
+
+  document.getElementById('cl-detail-body').innerHTML = `
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:12px 14px;background:var(--bg);border-bottom:1px solid var(--border);">
+      <div><div style="font-size:10px;color:var(--text-3);">CREDIT LIMIT</div><div style="font-family:'IBM Plex Mono',monospace;font-weight:700;">${fmt(c.limit)}</div></div>
+      <div><div style="font-size:10px;color:var(--text-3);">USED</div><div style="font-family:'IBM Plex Mono',monospace;font-weight:700;color:${pct>=100?'#C62828':'var(--text)'};">${fmt(c.used)}</div></div>
+      <div><div style="font-size:10px;color:var(--text-3);">AVAILABLE</div><div style="font-family:'IBM Plex Mono',monospace;font-weight:700;color:#2E7D32;">${fmt(Math.max(0,c.limit-c.used))}</div></div>
+    </div>
+    <div style="padding:8px 14px;background:var(--bg);border-bottom:1px solid var(--border);">
+      <div style="display:flex;justify-content:space-between;font-size:10px;color:var(--text-3);margin-bottom:2px;"><span>Credit Utilisation</span><span>${pct}%</span></div>
+      <div class="cl-bar"><div class="cl-bar-fill" style="width:${pct}%;background:${bc};"></div></div>
+    </div>
+    <div style="padding:8px 14px;font-size:10px;font-weight:700;letter-spacing:1px;color:var(--text-3);background:var(--bg);border-bottom:1px solid var(--border);">TRANSACTION HISTORY</div>
+    ${tx.length ? tx.map(t=>`
+      <div class="cl-tx">
+        <div style="font-size:16px;">${t.type==='debit'?'🏨':'💰'}</div>
+        <div style="flex:1;"><div style="font-weight:500;">${t.desc}</div><div style="font-size:10px;color:var(--text-3);">${t.date}</div></div>
+        <div class="${t.type==='debit'?'cl-debit':'cl-credit'}">${t.type==='debit'?'+':'-'}${fmt(t.amount)}</div>
+      </div>`).join('')
+    : '<div style="padding:16px;text-align:center;color:var(--text-3);font-size:12px;">No transactions</div>'}
+    <div style="display:flex;justify-content:space-between;padding:11px 14px;border-top:2px solid var(--border);font-weight:700;">
+      <span>Outstanding Balance</span>
+      <span style="font-family:'IBM Plex Mono',monospace;color:${c.used>0?'#C62828':'#2E7D32'};">${fmt(c.used)}</span>
+    </div>`;
+
+  document.getElementById('cl-inv-list').innerHTML = `
+    <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 14px;border-bottom:1px solid var(--border);font-size:12px;">
+      <div><div style="font-weight:600;">CI-${String(Math.floor(Math.random()*9000+1000))}</div><div style="font-size:10px;color:var(--text-3);">${c.last} — Room booking charges</div></div>
+      <div style="display:flex;align-items:center;gap:10px;"><span style="font-family:'IBM Plex Mono',monospace;font-weight:700;">${fmt(c.used)}</span>${billStatusBadge(c.used>0?'pending':'paid')}<button class="btn btn-ghost btn-sm" onclick="toast('📧 Invoice emailed')">📧</button></div>
+    </div>`;
+}
+
+function doClPayment() {
+  const amt = parseFloat(document.getElementById('clp-amount').value);
+  if (!amt||amt<=0) { toast('Enter valid amount','error'); return; }
+  const c = cityLedgerData.find(x=>x.id===activeCL);
+  if (c) { c.used = Math.max(0,c.used-amt); if(c.used<c.limit) c.status='active'; }
+  closeModal('modal-clpay');
+  renderClKPIs(); renderClList(); selectCL(activeCL);
+  toast('✅ Payment of ' + fmt(amt) + ' posted to ' + c?.company);
+}
+
+function doAddCorp() {
+  const name = document.getElementById('nc-name').value.trim();
+  if (!name) { toast('Enter company name','error'); return; }
+  const limit = parseFloat(document.getElementById('nc-limit').value)||250000;
+  cityLedgerData.push({ id:'CL-'+String(cityLedgerData.length+1).padStart(3,'0'), company:name, contact:document.getElementById('nc-contact').value||'—', limit, used:0, invoices:0, last:'—', status:'active' });
+  closeModal('modal-newcorp'); renderClKPIs(); renderClList();
+  toast('✅ Corporate account created: ' + name);
 }
 
 // ═══════════ CHANNELS ═══════════
@@ -2217,8 +3211,333 @@ const tom = new Date(Date.now() + 86400000).toISOString().split('T')[0];
 document.getElementById('r-cin') && (document.getElementById('r-cin').value = todayStr);
 document.getElementById('r-cout') && (document.getElementById('r-cout').value = tom);
 
+
+// ═══════════ PRINT SYSTEM ═══════════
+let currentPage = 'dashboard';
+
+const printMenuConfig = {
+  reservations: [
+    { icon:'📋', label:'All Reservations List',  fn:'printPage("reservations","Reservations List")' },
+    { icon:'📊', label:'In-House Report',         fn:'printFiltered("inhouse")' },
+    { icon:'✅', label:'Expected Arrivals',        fn:'printFiltered("reserved")' },
+  ],
+  checkin: [
+    { icon:'✅', label:'Arrivals List',           fn:'printPage("checkin","Check-In Arrivals")' },
+    { icon:'📝', label:'Registration Cards',      fn:'printRegistration()' },
+  ],
+  checkout: [
+    { icon:'🚪', label:'Departures List',         fn:'printPage("checkout","Check-Out Departures")' },
+  ],
+  housekeeping: [
+    { icon:'🧹', label:'Housekeeping Report',     fn:'printPage("housekeeping","Housekeeping Status")' },
+    { icon:'📋', label:'Room Status Sheet',       fn:'printRoomStatus()' },
+  ],
+  billing: [
+    { icon:'💳', label:'Billing Summary',         fn:'printPage("billing","Billing Summary")' },
+    { icon:'📊', label:'Outstanding Bills Only',  fn:'printOutstanding()' },
+  ],
+  folio: [
+    { icon:'📄', label:'Guest Folio / Invoice',   fn:'printFolio()' },
+  ],
+  payment: [
+    { icon:'🧾', label:'Payment Receipt',         fn:'printReceipt()' },
+    { icon:'📋', label:'Payment History',         fn:'printPage("payment","Payment History")' },
+  ],
+  cityledger: [
+    { icon:'🏢', label:'City Ledger Report',      fn:'printPage("cityledger","City Ledger")' },
+    { icon:'📄', label:'Account Statement',       fn:'printClStatement()' },
+  ],
+  nightaudit: [
+    { icon:'🌙', label:'Night Audit Report',      fn:'printPage("nightaudit","Night Audit")' },
+  ],
+  guests: [
+    { icon:'👤', label:'Guest Directory',         fn:'printPage("guests","Guest Directory")' },
+  ],
+  reports: [
+    { icon:'📈', label:'Full Report',             fn:'printPage("reports","Reports & Analytics")' },
+  ],
+  frontdesk: [
+    { icon:'🏧', label:'Front Desk Summary',      fn:'printPage("frontdesk","Front Desk Summary")' },
+  ],
+};
+
+function updatePrintMenu(page) {
+  const btn  = document.getElementById('print-btn');
+  const menu = document.getElementById('print-menu');
+  const cfg  = printMenuConfig[page];
+  if (!cfg || !btn) { if(btn) btn.style.display='none'; return; }
+  btn.style.display='';
+  menu.innerHTML = '<div class="print-menu-label">PRINT OPTIONS</div>' +
+    cfg.map(item =>
+      '<div class="print-menu-item" onclick="' + item.fn + ';closePrintMenu()">' +
+      '<span style="font-size:15px;">' + item.icon + '</span>' +
+      '<span>' + item.label + '</span></div>'
+    ).join('');
+}
+
+function togglePrintMenu() {
+  const menu = document.getElementById('print-menu');
+  menu.style.display = menu.style.display==='none' ? 'block' : 'none';
+}
+
+function closePrintMenu() {
+  const m = document.getElementById('print-menu');
+  if(m) m.style.display='none';
+}
+
+document.addEventListener('click', function(e) {
+  const wrap = document.getElementById('print-btn-wrap');
+  if (wrap && !wrap.contains(e.target)) closePrintMenu();
+});
+
+function printPage(pageId, title) {
+  document.querySelectorAll('.page').forEach(function(p){ p.classList.remove('print-active'); });
+  const el = document.getElementById('page-' + pageId);
+  if (el) el.classList.add('print-active');
+  const rt = document.getElementById('print-report-title');
+  const rd = document.getElementById('print-report-date');
+  if(rt) rt.textContent = title;
+  if(rd) rd.textContent = new Date().toLocaleDateString('en-GB',{weekday:'long',year:'numeric',month:'long',day:'numeric'});
+  window.print();
+  setTimeout(function(){
+    document.querySelectorAll('.page').forEach(function(p){ p.classList.remove('print-active'); });
+    const cur = document.getElementById('page-' + currentPage);
+    if(cur) cur.classList.add('active');
+  }, 600);
+}
+
+function printFolio() {
+  const r = reservations.find(function(x){ return x.id===activeFolioRes; });
+  if (!r) { toast('No folio selected','error'); return; }
+  const bal = calcBalance(r.id);
+  const ch  = folioCharges[r.id] || [];
+  let running = 0;
+  const rows = ch.filter(function(c){ return c.amount>0; }).map(function(c){
+    if (c.type==='debit')  running += c.amount;
+    if (c.type==='credit') running -= c.amount;
+    return '<tr><td>'+c.date+'</td><td>'+c.desc+'</td><td>'+c.dept+'</td>' +
+      '<td style="text-align:right">'+(c.type==='debit'?fmtN(c.amount):'')+'</td>' +
+      '<td style="text-align:right;color:#2E7D32">'+(c.type==='credit'?fmtN(c.amount):'')+'</td>' +
+      '<td style="text-align:right;font-weight:600;color:'+(running>0?'#C62828':'#2E7D32')+'">'+fmtN(Math.abs(running))+'</td></tr>';
+  }).join('');
+
+  const win = window.open('','_blank');
+  win.document.write('<!DOCTYPE html><html><head><title>Guest Folio</title>' +
+  '<style>body{font-family:Segoe UI,sans-serif;font-size:12px;margin:0;padding:20px}' +
+  'h2{margin:0;font-size:18px}.hdr{text-align:center;border-bottom:2px solid #333;padding-bottom:12px;margin-bottom:16px}' +
+  '.info{display:flex;flex-wrap:wrap;gap:10px;background:#f5f7fa;padding:12px;border-radius:6px;margin-bottom:14px}' +
+  '.fi label{font-size:9px;font-weight:700;letter-spacing:1px;color:#888;display:block}.fi .v{font-size:12px;font-weight:500}' +
+  'table{width:100%;border-collapse:collapse}th{background:#f0f2f5;padding:7px 10px;font-size:11px;text-align:left;border-bottom:2px solid #ddd}' +
+  'td{padding:6px 10px;border-bottom:1px solid #eee}.tr{font-weight:700;background:#f9f9f9}' +
+  '.bal{text-align:right;margin-top:14px;padding:12px;background:#f0f2f5;border-radius:6px}' +
+  '.stamp{text-align:center;margin-top:16px;padding:9px;border:2px solid #2E7D32;border-radius:6px;color:#2E7D32;font-size:13px;font-weight:700;letter-spacing:2px;display:'+(bal.balance<=0?'block':'none')+'}' +
+  '.footer{text-align:center;margin-top:18px;font-size:10px;color:#999;border-top:1px solid #eee;padding-top:10px}' +
+  '@media print{@page{margin:15mm 12mm;size:A4}}</style></head><body>' +
+  '<div class="hdr"><h2>🏨 LUXE GRAND HOTEL</h2>' +
+  '<p style="font-size:11px;color:#666">123 Galle Road, Colombo 03 | Tel: +94 11 234 5678 | VAT: 12345678</p>' +
+  '<p style="margin-top:5px;font-size:13px;font-weight:600;color:#333">GUEST FOLIO / TAX INVOICE</p></div>' +
+  '<div class="info">' +
+  '<div class="fi"><label>GUEST NAME</label><div class="v">'+r.fname+' '+r.lname+'</div></div>' +
+  '<div class="fi"><label>ROOM</label><div class="v">'+r.room+' — '+r.type+'</div></div>' +
+  '<div class="fi"><label>RESERVATION</label><div class="v">'+r.id+'</div></div>' +
+  '<div class="fi"><label>CHECK-IN</label><div class="v">'+r.cin+'</div></div>' +
+  '<div class="fi"><label>CHECK-OUT</label><div class="v">'+r.cout+'</div></div>' +
+  '<div class="fi"><label>NIGHTS</label><div class="v">'+r.nights+'</div></div>' +
+  '<div class="fi"><label>RATE PLAN</label><div class="v">'+r.rate+'</div></div>' +
+  '<div class="fi"><label>SOURCE</label><div class="v">'+r.source+'</div></div>' +
+  '</div>' +
+  '<table><thead><tr><th>Date</th><th>Description</th><th>Dept</th><th style="text-align:right">Debit (LKR)</th><th style="text-align:right">Credit (LKR)</th><th style="text-align:right">Running Bal.</th></tr></thead>' +
+  '<tbody>'+rows+'</tbody>' +
+  '<tfoot><tr class="tr"><td colspan="3">TOTAL</td>' +
+  '<td style="text-align:right">'+fmtN(bal.debits)+'</td>' +
+  '<td style="text-align:right;color:#2E7D32">'+fmtN(bal.credits)+'</td>' +
+  '<td style="text-align:right;color:'+(bal.balance>0?'#C62828':'#2E7D32')+'">'+fmtN(Math.abs(bal.balance))+'</td>' +
+  '</tr></tfoot></table>' +
+  '<div class="bal"><div style="font-size:11px;color:#666">BALANCE DUE</div>' +
+  '<div style="font-size:22px;font-weight:700;color:'+(bal.balance>0?'#C62828':'#2E7D32')+';font-family:monospace">'+fmt(Math.abs(bal.balance))+'</div></div>' +
+  '<div class="stamp">✓ FULLY SETTLED</div>' +
+  '<div class="footer">Printed: '+new Date().toLocaleString('en-GB')+' | Cashier: Amal Mendis | Thank you for staying with us!</div>' +
+  '<script>window.onload=function(){window.print()}<\/script></body></html>');
+  win.document.close();
+}
+
+function printReceipt() {
+  if (!paySelectedRes) { toast('Process a payment first','error'); return; }
+  const r   = paySelectedRes;
+  const amt = parseFloat(numVal)||0;
+  const bal = calcBalance(r.id);
+  const win = window.open('','_blank');
+  win.document.write('<!DOCTYPE html><html><head><title>Receipt</title>' +
+  '<style>body{font-family:Courier New,monospace;font-size:12px;max-width:320px;margin:20px auto}' +
+  'h3{text-align:center;font-size:15px;margin:0}p{text-align:center;font-size:10px;color:#666;margin:2px}' +
+  '.row{display:flex;justify-content:space-between;margin-bottom:5px}' +
+  '.dash{border:none;border-top:2px dashed #ccc;margin:10px 0}' +
+  '.total{font-size:14px;font-weight:700;border-top:2px solid #333;padding-top:7px;margin-top:4px}' +
+  '.stamp{text-align:center;margin:14px 0;padding:9px;border:2px solid #2E7D32;border-radius:6px;color:#2E7D32;font-size:13px;font-weight:700;letter-spacing:2px}' +
+  '.foot{text-align:center;font-size:10px;color:#999;margin-top:12px}' +
+  '@media print{@page{size:80mm auto;margin:5mm}}</style></head><body>' +
+  '<h3>🏨 LUXE GRAND HOTEL</h3><p>123 Galle Road, Colombo 03</p><p>+94 11 234 5678</p>' +
+  '<hr class="dash">' +
+  '<div class="row"><span>Receipt #</span><span>RCP-'+Math.floor(Math.random()*9000+1000)+'</span></div>' +
+  '<div class="row"><span>Date</span><span>'+new Date().toLocaleDateString('en-GB')+'</span></div>' +
+  '<div class="row"><span>Guest</span><span>'+r.fname+' '+r.lname+'</span></div>' +
+  '<div class="row"><span>Room</span><span>'+r.room+'</span></div>' +
+  '<div class="row"><span>Stay</span><span>'+r.cin+' → '+r.cout+'</span></div>' +
+  '<hr class="dash">' +
+  '<div class="row total"><span>TOTAL DUE</span><span>LKR '+fmtN(bal.debits)+'</span></div>' +
+  '<div class="row" style="color:#2E7D32"><span>Paid ('+payMethod+')</span><span>LKR '+fmtN(amt)+'</span></div>' +
+  '<div class="row" style="color:#1565C0"><span>Balance</span><span>LKR '+fmtN(Math.max(0,bal.debits-bal.credits))+'</span></div>' +
+  '<div class="stamp">✓ PAYMENT RECEIVED</div>' +
+  '<div class="foot">Cashier: Amal Mendis<br>Thank you for your stay!</div>' +
+  '<script>window.onload=function(){window.print()}<\/script></body></html>');
+  win.document.close();
+}
+
+function printRegistration() {
+  const arrivals = reservations.filter(function(r){ return r.status==='reserved'; });
+  const win = window.open('','_blank');
+  const cards = arrivals.map(function(r){
+    return '<div class="rc"><div class="rch"><div><h2>🏨 Luxe Grand Hotel</h2><div class="sub">Registration Card</div></div>' +
+    '<div style="text-align:right"><div style="font-size:11px;font-weight:600">'+r.id+'</div><div class="sub">'+r.cin+' → '+r.cout+'</div></div></div>' +
+    '<div class="rg">' +
+    '<div class="rf"><label>GUEST NAME</label><div class="rv">'+r.fname+' '+r.lname+'</div></div>' +
+    '<div class="rf"><label>NIC / PASSPORT</label><div class="rv">'+r.nic+'</div></div>' +
+    '<div class="rf"><label>NATIONALITY</label><div class="rv">'+r.nat+'</div></div>' +
+    '<div class="rf"><label>ROOM</label><div class="rv">'+r.room+'</div></div>' +
+    '<div class="rf"><label>TYPE</label><div class="rv">'+r.type+'</div></div>' +
+    '<div class="rf"><label>RATE PLAN</label><div class="rv">'+r.rate+'</div></div>' +
+    '<div class="rf"><label>CHECK-IN</label><div class="rv">'+r.cin+'</div></div>' +
+    '<div class="rf"><label>CHECK-OUT</label><div class="rv">'+r.cout+'</div></div>' +
+    '<div class="rf"><label>ADULTS</label><div class="rv">'+r.adults+'</div></div>' +
+    '</div>' +
+    '<div class="srow"><div class="sline">Guest Signature</div><div class="sline">Date</div><div class="sline">Receptionist</div></div></div>';
+  }).join('');
+  win.document.write('<!DOCTYPE html><html><head><title>Registration Cards</title>' +
+  '<style>body{font-family:Segoe UI,sans-serif;font-size:12px;margin:0;padding:16px}' +
+  '.rc{border:2px solid #333;border-radius:6px;padding:14px;margin-bottom:20px;page-break-inside:avoid}' +
+  '.rch{display:flex;justify-content:space-between;border-bottom:1px solid #ccc;padding-bottom:9px;margin-bottom:11px}' +
+  'h2{margin:0;font-size:14px}.sub{font-size:10px;color:#666}' +
+  '.rg{display:grid;grid-template-columns:1fr 1fr 1fr;gap:9px}' +
+  '.rf label{font-size:9px;font-weight:700;letter-spacing:1px;color:#888;display:block;margin-bottom:1px}' +
+  '.rv{border-bottom:1px solid #999;padding:2px 0 4px;min-height:17px;font-size:12px}' +
+  '.srow{margin-top:14px;display:flex;gap:24px}' +
+  '.sline{flex:1;border-bottom:1px solid #333;padding-top:18px;font-size:9px;color:#888;text-align:center}' +
+  '@media print{@page{margin:10mm}}</style></head><body>' +
+  cards +
+  '<script>window.onload=function(){window.print()}<\/script></body></html>');
+  win.document.close();
+}
+
+function printFiltered(status) {
+  const data  = reservations.filter(function(r){ return r.status===status; });
+  const title = status==='inhouse'?'In-House Guest Report':'Expected Arrivals Report';
+  const win   = window.open('','_blank');
+  win.document.write('<!DOCTYPE html><html><head><title>'+title+'</title>' +
+  '<style>body{font-family:Segoe UI,sans-serif;font-size:12px;margin:0;padding:20px}' +
+  '.hdr{text-align:center;border-bottom:2px solid #333;padding-bottom:11px;margin-bottom:14px}' +
+  'h2{margin:0;font-size:18px}table{width:100%;border-collapse:collapse}' +
+  'th{background:#f0f2f5;padding:7px 10px;font-size:11px;text-align:left;border-bottom:2px solid #ddd}' +
+  'td{padding:6px 10px;border-bottom:1px solid #eee}.foot{text-align:center;margin-top:14px;font-size:10px;color:#999}' +
+  '@media print{@page{margin:15mm 12mm;size:A4 landscape}}</style></head><body>' +
+  '<div class="hdr"><h2>🏨 Luxe Grand Hotel — '+title+'</h2>' +
+  '<p style="font-size:11px;color:#666">'+new Date().toLocaleDateString('en-GB',{weekday:'long',year:'numeric',month:'long',day:'numeric'})+'</p></div>' +
+  '<table><thead><tr><th>Res #</th><th>Guest Name</th><th>Room</th><th>Type</th><th>Check-In</th><th>Check-Out</th><th>Nights</th><th>Rate</th><th>Source</th></tr></thead>' +
+  '<tbody>'+data.map(function(r){ return '<tr><td>'+r.id+'</td><td>'+r.fname+' '+r.lname+'</td><td>'+r.room+'</td><td>'+r.type+'</td><td>'+r.cin+'</td><td>'+r.cout+'</td><td>'+r.nights+'</td><td>'+r.rate+'</td><td>'+r.source+'</td></tr>'; }).join('')+'</tbody></table>' +
+  '<div class="foot">Total: '+data.length+' guests | Printed: '+new Date().toLocaleString('en-GB')+' | By: Amal Mendis</div>' +
+  '<script>window.onload=function(){window.print()}<\/script></body></html>');
+  win.document.close();
+}
+
+function printRoomStatus() {
+  const win = window.open('','_blank');
+  const statMap={vc:'Vacant Clean',vd:'Vacant Dirty',oc:'Occupied Clean',od:'Occupied Dirty',maint:'Maintenance'};
+  const colMap={vc:'#E3F2FD',vd:'#FFF8E1',oc:'#E8F5E9',od:'#FCE4EC',maint:'#EDE7F6'};
+  const cells = hkData.map(function(r){
+    return '<div style="border:1.5px solid #ddd;border-radius:6px;padding:10px 8px;text-align:center;background:'+colMap[r.status]+'">' +
+    '<div style="font-size:16px;font-weight:700">'+r.room+'</div>' +
+    '<div style="font-size:9px;color:#888;margin:2px 0 5px">'+r.type+'</div>' +
+    '<div style="font-size:10px;font-weight:600">'+statMap[r.status]+'</div></div>';
+  }).join('');
+  win.document.write('<!DOCTYPE html><html><head><title>Room Status</title>' +
+  '<style>body{font-family:Segoe UI,sans-serif;font-size:12px;margin:0;padding:20px}' +
+  '.hdr{text-align:center;border-bottom:2px solid #333;padding-bottom:10px;margin-bottom:14px}' +
+  'h2{margin:0;font-size:17px}.grid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}' +
+  '.foot{text-align:center;margin-top:12px;font-size:10px;color:#999}' +
+  '@media print{@page{margin:12mm;size:A4 landscape}}</style></head><body>' +
+  '<div class="hdr"><h2>🏨 Luxe Grand Hotel — Room Status Report</h2>' +
+  '<p style="font-size:11px;color:#666">'+new Date().toLocaleDateString('en-GB',{weekday:'long',year:'numeric',month:'long',day:'numeric'})+'</p></div>' +
+  '<div class="grid">'+cells+'</div>' +
+  '<div class="foot">Printed: '+new Date().toLocaleString('en-GB')+' | By: Amal Mendis</div>' +
+  '<script>window.onload=function(){window.print()}<\/script></body></html>');
+  win.document.close();
+}
+
+function printOutstanding() {
+  const data = reservations.filter(function(r){ return calcBalance(r.id).balance > 0; });
+  const total = data.reduce(function(s,r){ return s+calcBalance(r.id).balance; }, 0);
+  const win = window.open('','_blank');
+  win.document.write('<!DOCTYPE html><html><head><title>Outstanding Bills</title>' +
+  '<style>body{font-family:Segoe UI,sans-serif;font-size:12px;margin:0;padding:20px}' +
+  '.hdr{text-align:center;border-bottom:2px solid #333;padding-bottom:11px;margin-bottom:14px}' +
+  'h2{margin:0;font-size:18px}table{width:100%;border-collapse:collapse}' +
+  'th{background:#f0f2f5;padding:7px 10px;font-size:11px;text-align:left;border-bottom:2px solid #ddd}' +
+  'td{padding:6px 10px;border-bottom:1px solid #eee}.amt{text-align:right;font-family:Courier New,monospace;font-weight:600}' +
+  '.tr{background:#fff3e0;font-weight:700}.foot{text-align:center;margin-top:14px;font-size:10px;color:#999}' +
+  '@media print{@page{margin:15mm 12mm;size:A4}}</style></head><body>' +
+  '<div class="hdr"><h2>🏨 Luxe Grand Hotel — Outstanding Bills</h2>' +
+  '<p style="font-size:11px;color:#666">'+new Date().toLocaleDateString('en-GB',{weekday:'long',year:'numeric',month:'long',day:'numeric'})+'</p></div>' +
+  '<table><thead><tr><th>Folio #</th><th>Guest</th><th>Room</th><th>Check-out</th><th class="amt">Charges</th><th class="amt">Paid</th><th class="amt">Balance Due</th></tr></thead>' +
+  '<tbody>'+data.map(function(r){ var b=calcBalance(r.id); return '<tr><td>'+r.id.replace('R-','F-')+'</td><td>'+r.fname+' '+r.lname+'</td><td>'+r.room+'</td><td>'+r.cout+'</td><td class="amt">'+fmtN(b.debits)+'</td><td class="amt">'+fmtN(b.credits)+'</td><td class="amt" style="color:#C62828">'+fmt(b.balance)+'</td></tr>'; }).join('')+
+  '<tr class="tr"><td colspan="6">TOTAL OUTSTANDING</td><td class="amt" style="color:#C62828">'+fmt(total)+'</td></tr>' +
+  '</tbody></table>' +
+  '<div class="foot">Printed: '+new Date().toLocaleString('en-GB')+' | By: Amal Mendis</div>' +
+  '<script>window.onload=function(){window.print()}<\/script></body></html>');
+  win.document.close();
+}
+
+function printClStatement() {
+  if (!activeCL) { toast('Select a corporate account first','error'); return; }
+  var c  = cityLedgerData.find(function(x){ return x.id===activeCL; });
+  var tx = clTransactions[activeCL] || [];
+  var win = window.open('','_blank');
+  win.document.write('<!DOCTYPE html><html><head><title>CL Statement</title>' +
+  '<style>body{font-family:Segoe UI,sans-serif;font-size:12px;margin:0;padding:20px}' +
+  '.hdr{text-align:center;border-bottom:2px solid #333;padding-bottom:11px;margin-bottom:14px}' +
+  'h2{margin:0;font-size:18px}.abox{background:#f5f7fa;padding:12px;border-radius:6px;margin-bottom:14px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}' +
+  '.ai label{font-size:9px;font-weight:700;letter-spacing:1px;color:#888;display:block}' +
+  'table{width:100%;border-collapse:collapse}th{background:#f0f2f5;padding:7px 10px;font-size:11px;text-align:left;border-bottom:2px solid #ddd}' +
+  'td{padding:6px 10px;border-bottom:1px solid #eee}.amt{text-align:right;font-family:Courier New,monospace}' +
+  '.bal{text-align:right;margin-top:14px;padding:12px;background:#fff3e0;border-radius:6px}' +
+  '.foot{text-align:center;margin-top:14px;font-size:10px;color:#999}' +
+  '@media print{@page{margin:15mm 12mm;size:A4}}</style></head><body>' +
+  '<div class="hdr"><h2>🏨 Luxe Grand Hotel — City Ledger Statement</h2>' +
+  '<p style="font-size:11px;color:#666">'+new Date().toLocaleDateString('en-GB',{weekday:'long',year:'numeric',month:'long',day:'numeric'})+'</p></div>' +
+  '<div class="abox">' +
+  '<div class="ai"><label>COMPANY</label><strong>'+c.company+'</strong></div>' +
+  '<div class="ai"><label>CONTACT</label>'+c.contact+'</div>' +
+  '<div class="ai"><label>CREDIT LIMIT</label><strong>'+fmt(c.limit)+'</strong></div>' +
+  '<div class="ai"><label>OUTSTANDING</label><strong style="color:#C62828">'+fmt(c.used)+'</strong></div>' +
+  '<div class="ai"><label>AVAILABLE</label><strong style="color:#2E7D32">'+fmt(Math.max(0,c.limit-c.used))+'</strong></div>' +
+  '</div>' +
+  '<table><thead><tr><th>Date</th><th>Description</th><th class="amt">Debit</th><th class="amt">Credit</th></tr></thead>' +
+  '<tbody>'+tx.map(function(t){ return '<tr><td>'+t.date+'</td><td>'+t.desc+'</td><td class="amt" style="color:'+(t.type==='debit'?'#C62828':'')+'">'+( t.type==='debit'?fmt(t.amount):'')+'</td><td class="amt" style="color:#2E7D32">'+( t.type==='credit'?fmt(t.amount):'')+'</td></tr>'; }).join('')+'</tbody></table>' +
+  '<div class="bal"><span style="font-size:11px;color:#666">OUTSTANDING BALANCE: </span><strong style="font-size:16px;color:#C62828;font-family:Courier New,monospace">'+fmt(c.used)+'</strong></div>' +
+  '<div class="foot">Printed: '+new Date().toLocaleString('en-GB')+' | By: Amal Mendis</div>' +
+  '<script>window.onload=function(){window.print()}<\/script></body></html>');
+  win.document.close();
+}
+
 // ═══════════ INIT ═══════════
+// Set date defaults
+(function() {
+  const today = new Date().toISOString().split('T')[0];
+  const in30  = new Date(Date.now()+30*86400000).toISOString().split('T')[0];
+  ['pc-date','clp-date','inv-date2'].forEach(id => { const el=document.getElementById(id); if(el) el.value=today; });
+  const due = document.getElementById('inv-due2'); if(due) due.value=in30;
+})();
+
 renderDashboard();
+
 </script>
 </body>
 </html>
