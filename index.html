@@ -1108,8 +1108,8 @@ textarea.form-control { min-height: 70px; resize: vertical; }
   <div class="sb-user">
     <div class="sb-avatar">AM</div>
     <div class="sb-user-info">
-      <div class="sb-user-name">Amal Mendis</div>
-      <div class="sb-user-role">Front Office Manager</div>
+      <div class="sb-user-name">Kusal Rathnayaka</div>
+      <div class="sb-user-role">Accountantr</div>
     </div>
     <span style="color:rgba(255,255,255,0.3);cursor:pointer;font-size:14px" title="Logout">⏻</span>
   </div>
@@ -1144,7 +1144,7 @@ textarea.form-control { min-height: 70px; resize: vertical; }
       <div class="print-meta">
         <span id="print-report-title">Report</span>
         <span id="print-report-date"></span>
-        <span>Printed by: Amal Mendis</span>
+        <span>Printed by: Kusal Rathnayaka</span>
       </div>
     </div>
 
@@ -2980,7 +2980,7 @@ function updateReceipt(done=false) {
     <div class="rcpt-row" style="color:var(--primary);"><span>Remaining Bal.</span><span>${fmtN(newBal)}</span></div>
     ${done?'<div class="rcpt-stamp">✓ PAYMENT RECEIVED</div>':''}
     <hr class="rcpt-dashes">
-    <div style="text-align:center;font-size:10px;color:var(--text-3);">Cashier: Amal Mendis</div>`;
+    <div style="text-align:center;font-size:10px;color:var(--text-3);">Cashier: Kusal Rathnayaka</div>`;
 }
 
 function renderPayHistory() {
@@ -3356,7 +3356,7 @@ function printFolio() {
   '<div class="bal"><div style="font-size:11px;color:#666">BALANCE DUE</div>' +
   '<div style="font-size:22px;font-weight:700;color:'+(bal.balance>0?'#C62828':'#2E7D32')+';font-family:monospace">'+fmt(Math.abs(bal.balance))+'</div></div>' +
   '<div class="stamp">✓ FULLY SETTLED</div>' +
-  '<div class="footer">Printed: '+new Date().toLocaleString('en-GB')+' | Cashier: Amal Mendis | Thank you for staying with us!</div>' +
+  '<div class="footer">Printed: '+new Date().toLocaleString('en-GB')+' | Cashier: Kusal Rathnayaka | Thank you for staying with us!</div>' +
   '<script>window.onload=function(){window.print()}<\/script></body></html>');
   win.document.close();
 }
@@ -3388,7 +3388,7 @@ function printReceipt() {
   '<div class="row" style="color:#2E7D32"><span>Paid ('+payMethod+')</span><span>LKR '+fmtN(amt)+'</span></div>' +
   '<div class="row" style="color:#1565C0"><span>Balance</span><span>LKR '+fmtN(Math.max(0,bal.debits-bal.credits))+'</span></div>' +
   '<div class="stamp">✓ PAYMENT RECEIVED</div>' +
-  '<div class="foot">Cashier: Amal Mendis<br>Thank you for your stay!</div>' +
+  '<div class="foot">Cashier: Kusal Rathnayaka<br>Thank you for your stay!</div>' +
   '<script>window.onload=function(){window.print()}<\/script></body></html>');
   win.document.close();
 }
@@ -3443,7 +3443,7 @@ function printFiltered(status) {
   '<p style="font-size:11px;color:#666">'+new Date().toLocaleDateString('en-GB',{weekday:'long',year:'numeric',month:'long',day:'numeric'})+'</p></div>' +
   '<table><thead><tr><th>Res #</th><th>Guest Name</th><th>Room</th><th>Type</th><th>Check-In</th><th>Check-Out</th><th>Nights</th><th>Rate</th><th>Source</th></tr></thead>' +
   '<tbody>'+data.map(function(r){ return '<tr><td>'+r.id+'</td><td>'+r.fname+' '+r.lname+'</td><td>'+r.room+'</td><td>'+r.type+'</td><td>'+r.cin+'</td><td>'+r.cout+'</td><td>'+r.nights+'</td><td>'+r.rate+'</td><td>'+r.source+'</td></tr>'; }).join('')+'</tbody></table>' +
-  '<div class="foot">Total: '+data.length+' guests | Printed: '+new Date().toLocaleString('en-GB')+' | By: Amal Mendis</div>' +
+  '<div class="foot">Total: '+data.length+' guests | Printed: '+new Date().toLocaleString('en-GB')+' | By: Kusal Rathnayaka</div>' +
   '<script>window.onload=function(){window.print()}<\/script></body></html>');
   win.document.close();
 }
@@ -3467,7 +3467,7 @@ function printRoomStatus() {
   '<div class="hdr"><h2>🏨 Luxe Grand Hotel — Room Status Report</h2>' +
   '<p style="font-size:11px;color:#666">'+new Date().toLocaleDateString('en-GB',{weekday:'long',year:'numeric',month:'long',day:'numeric'})+'</p></div>' +
   '<div class="grid">'+cells+'</div>' +
-  '<div class="foot">Printed: '+new Date().toLocaleString('en-GB')+' | By: Amal Mendis</div>' +
+  '<div class="foot">Printed: '+new Date().toLocaleString('en-GB')+' | By: Kusal Rathnayaka</div>' +
   '<script>window.onload=function(){window.print()}<\/script></body></html>');
   win.document.close();
 }
@@ -3490,7 +3490,7 @@ function printOutstanding() {
   '<tbody>'+data.map(function(r){ var b=calcBalance(r.id); return '<tr><td>'+r.id.replace('R-','F-')+'</td><td>'+r.fname+' '+r.lname+'</td><td>'+r.room+'</td><td>'+r.cout+'</td><td class="amt">'+fmtN(b.debits)+'</td><td class="amt">'+fmtN(b.credits)+'</td><td class="amt" style="color:#C62828">'+fmt(b.balance)+'</td></tr>'; }).join('')+
   '<tr class="tr"><td colspan="6">TOTAL OUTSTANDING</td><td class="amt" style="color:#C62828">'+fmt(total)+'</td></tr>' +
   '</tbody></table>' +
-  '<div class="foot">Printed: '+new Date().toLocaleString('en-GB')+' | By: Amal Mendis</div>' +
+  '<div class="foot">Printed: '+new Date().toLocaleString('en-GB')+' | By: Kusal Rathnayaka</div>' +
   '<script>window.onload=function(){window.print()}<\/script></body></html>');
   win.document.close();
 }
@@ -3522,7 +3522,7 @@ function printClStatement() {
   '<table><thead><tr><th>Date</th><th>Description</th><th class="amt">Debit</th><th class="amt">Credit</th></tr></thead>' +
   '<tbody>'+tx.map(function(t){ return '<tr><td>'+t.date+'</td><td>'+t.desc+'</td><td class="amt" style="color:'+(t.type==='debit'?'#C62828':'')+'">'+( t.type==='debit'?fmt(t.amount):'')+'</td><td class="amt" style="color:#2E7D32">'+( t.type==='credit'?fmt(t.amount):'')+'</td></tr>'; }).join('')+'</tbody></table>' +
   '<div class="bal"><span style="font-size:11px;color:#666">OUTSTANDING BALANCE: </span><strong style="font-size:16px;color:#C62828;font-family:Courier New,monospace">'+fmt(c.used)+'</strong></div>' +
-  '<div class="foot">Printed: '+new Date().toLocaleString('en-GB')+' | By: Amal Mendis</div>' +
+  '<div class="foot">Printed: '+new Date().toLocaleString('en-GB')+' | By: Kusal Rathnayaka</div>' +
   '<script>window.onload=function(){window.print()}<\/script></body></html>');
   win.document.close();
 }
